@@ -1,0 +1,6 @@
+# node 
+node_modules/
+
+
+# ignore files
+wp-config.php

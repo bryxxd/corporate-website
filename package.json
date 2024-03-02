@@ -1,0 +1,21 @@
+{
+  "name": "wordpress",
+  "version": "1.0.0",
+  "description": "Wordpress-Practice",
+  "scripts": {
+    "build:scss": "gulp build:scss",
+    "watch:scss": "gulp watch:scss"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.63.6"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

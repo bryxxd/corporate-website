@@ -1,0 +1,61 @@
+html {
+    font-family: $font-default;
+}
+
+// Body
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// Heading
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+// Anchor
+a {
+    color: $color-text;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+// Paragraph 
+p {
+    margin: 0;
+}
+
+// List ul
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    // List li
+    li {
+        list-style: none;
+    }
+
+    // List ol
+    ol {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+img {
+    vertical-align: top;
+
+    @include mq_sp {
+        max-width: 100%;
+    }
+}

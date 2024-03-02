@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6rem;
+    background: #fff;
+
+    @include mq_sp {
+        padding: 0.5rem 1rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+        z-index: 9999;
+    }
+
+    &__info {
+        &__title {
+            font-size: 40px;
+        }
+    }
+}
