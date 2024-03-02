@@ -1,11 +1,11 @@
 .container {
     margin: 0 auto;
-    max-width: calc(#{$pc-width}px + #{$pc-gap * 2});
-    padding: 0 $pc-gap;
+    max-width: calc(#{$pc-layout-width}px + #{$pc-window-gap * 2});
+    padding: 0 $pc-window-gap;
 
     @include mq_sp {
         margin: 0 auto;
         max-width: auto;
-        padding: 0 $sp-gap;
+        padding: 0 $sp-window-gap;
     }
 }

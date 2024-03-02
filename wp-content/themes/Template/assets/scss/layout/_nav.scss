@@ -8,15 +8,17 @@
             inset: 0;
             flex-direction: column;
             justify-content: center;
-            background: #fff;
+            background: $background-color1;
             align-items: center;
             gap: 3rem;
-            height: 0;
             overflow: hidden;
             transition: 0.2s;
+            opacity: 0;
+            z-index: -1;
 
             .is-view & {
-                height: 100%;
+                opacity: 1;
+                z-index: 9;
             }
         }
   
@@ -24,13 +26,49 @@
             padding: 0 2rem;
 
             &__a {
-                font-size: 20px;
+                font-size: 1.7rem;
                 text-decoration: none;
                 font-weight: 500;
                 color: #4b4444;
-    
+                transform: translateY(-50%);
+                
                 &:hover {
                     opacity: 0.7;
+                }
+
+                &.is-contact {
+                    background: $background-color;
+                    color: #222222;
+                    padding: 1rem 3rem;
+                    border-radius: 100px;
+                    border: 1px solid $text-color1;
+                    margin-left: -15px;
+                    position: relative;
+
+                    @include mq_sp {
+                        margin-left: 0;
+                    }
+                    
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        background-color: $text-color2;
+                        border-radius: 100px;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        z-index: -1;
+                        transition-duration: 0.2s;
+                    }
+
+                    &:hover {
+                        opacity: 1;
+
+                        &::after {
+                            transform : translateY(5px) translateX(5px);
+                        }
+                    }
                 }
             }
         }
@@ -39,21 +77,22 @@
     &__menu {
         @include mq_sp {
             position: absolute;
-            top: 1rem;
+            top: 0.8rem;
             right: 2rem;
-            z-index: 5;
+            z-index: 9999;
         }
         
         &__button{
             background: none;
             border: none;
             width: 2rem;
+            height: 2rem;
 
             &__line {
                 width: 100%;
                 display: block;
                 background: #000;
-                height: 2px;
+                height: 0.2rem;
                 position: absolute;
                 transition: 0.2s;
 
@@ -73,7 +112,7 @@
             .is-view & {
                 &__line {
                     &:nth-child(1) {
-                        top: 50%;
+                        top: 70%;
                         transform: rotate(45deg);
                     }
 
@@ -82,7 +121,7 @@
                     }
 
                     &:nth-child(3) {
-                        top: 50%;
+                        top: 70%;
                         transform: rotate(-45deg);
                     }
                 }
