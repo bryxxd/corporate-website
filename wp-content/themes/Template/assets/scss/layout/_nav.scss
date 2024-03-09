@@ -29,7 +29,7 @@
                 font-size: 1.7rem;
                 text-decoration: none;
                 font-weight: 500;
-                color: #4b4444;
+                color: #fff;
                 transform: translateY(-50%);
                 
                 &:hover {
@@ -37,8 +37,8 @@
                 }
 
                 &.is-contact {
-                    background: $background-color;
-                    color: #222222;
+                    background: $background-color1;
+                    color: $text-color2;
                     padding: 1rem 3rem;
                     border-radius: 100px;
                     border: 1px solid $text-color1;
