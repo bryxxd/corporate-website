@@ -29,6 +29,10 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
                     </ul>
                 </div>
             </div>
+            <div class="p-index__mv__info">
+                <h2 class="p-index__mv__info__h2">the ultimate adventure guide</h2>
+                <p class="p-index__mv__info__p">Phasellus sollicitudin ut pellentesque vitae eleifend diam rutrum elementum libero. Mauris nulla sollicitudin massa donec ac interdum sagittis egestas. Amet praesent nec turpis amet in.</p>
+            </div>
         </section>
     </div>
 </main>

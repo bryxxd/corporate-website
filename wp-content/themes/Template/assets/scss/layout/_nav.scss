@@ -29,8 +29,12 @@
                 font-size: 1.7rem;
                 text-decoration: none;
                 font-weight: 500;
-                color: #fff;
+                color: $background-color1;
                 transform: translateY(-50%);
+
+                @include mq_sp {
+                    color: #000;
+                }
                 
                 &:hover {
                     opacity: 0.7;
@@ -41,33 +45,11 @@
                     color: $text-color2;
                     padding: 1rem 3rem;
                     border-radius: 100px;
-                    border: 1px solid $text-color1;
                     margin-left: -15px;
                     position: relative;
 
                     @include mq_sp {
                         margin-left: 0;
-                    }
-                    
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        background-color: $text-color2;
-                        border-radius: 100px;
-                        top: 0;
-                        bottom: 0;
-                        right: 0;
-                        left: 0;
-                        z-index: -1;
-                        transition-duration: 0.2s;
-                    }
-
-                    &:hover {
-                        opacity: 1;
-
-                        &::after {
-                            transform : translateY(5px) translateX(5px);
-                        }
                     }
                 }
             }
@@ -77,7 +59,7 @@
     &__menu {
         @include mq_sp {
             position: absolute;
-            top: 0.8rem;
+            top: 2rem;
             right: 2rem;
             z-index: 9999;
         }
@@ -86,33 +68,34 @@
             background: none;
             border: none;
             width: 2rem;
-            height: 2rem;
 
             &__line {
                 width: 100%;
                 display: block;
-                background: #000;
+                background: $background-color1;
                 height: 0.2rem;
                 position: absolute;
                 transition: 0.2s;
 
                 &:nth-child(1) {
-                    top: 0.9rem;
+                    top: 0.1rem;
                 }
 
                 &:nth-child(2) {
-                    top: 1.5rem;
+                    top: 47%;
                 }
 
                 &:nth-child(3) {
-                    top: 2.2rem;
+                    bottom: 0;
                 }
             }
 
             .is-view & {
                 &__line {
+                    background-color: #000;
+
                     &:nth-child(1) {
-                        top: 70%;
+                        top: 40%;
                         transform: rotate(45deg);
                     }
 
@@ -121,7 +104,7 @@
                     }
 
                     &:nth-child(3) {
-                        top: 70%;
+                        top: 40%;
                         transform: rotate(-45deg);
                     }
                 }

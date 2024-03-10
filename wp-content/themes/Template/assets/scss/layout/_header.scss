@@ -10,7 +10,7 @@
     z-index: 9999;
 
     @include mq_sp {
-        padding: 0.5rem 1rem;
+        padding: 1rem 1.5rem;
         position: fixed;
         top: 0;
         right: 0;
@@ -28,6 +28,12 @@
                 font-size: 2.2rem;
                 position: relative;
                 z-index: 999;
+            }
+        }
+
+        .is-view & {
+            &__title {
+                color: #000;
             }
         }
     }
