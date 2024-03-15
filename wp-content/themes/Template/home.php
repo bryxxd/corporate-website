@@ -14,16 +14,17 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
                     <ul class="splide__list">
                         <li class="splide__slide">
                             <img class="p-index__mv__slide__img"
-                                src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-mv-1.webp"
+                                src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-mv-1.jpg"
                                 alt="">
                         </li>
                         <li class="splide__slide">
                             <img class="p-index__mv__slide__img"
-                                src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-mv-2.webp"
+                                src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-mv-2.jpg"
                                 alt="">
                         </li>
                         <li class="splide__slide">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-mv-3.webp"
+                            <img class="p-index__mv__slide__img"
+                                src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-mv-3.jpg"
                                 alt="">
                         </li>
                     </ul>
@@ -31,7 +32,7 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
             </div>
             <div class="p-index__mv__info">
                 <h2 class="p-index__mv__info__h2">the ultimate adventure guide</h2>
-                <p class="p-index__mv__info__p">Phasellus sollicitudin ut pellentesque vitae eleifend diam rutrum elementum libero. Mauris nulla sollicitudin massa donec ac interdum sagittis egestas. Amet praesent nec turpis amet in.</p>
+                <p class="p-index__mv__info__p">Phasellus sollicitudin ut pellentesque vitae eleifend diam rutr.</p>
             </div>
         </section>
     </div>

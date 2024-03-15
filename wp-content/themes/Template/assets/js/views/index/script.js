@@ -2,14 +2,16 @@
     $(function () {
         var splide = new Splide( '.splide', {
             type   : 'fade',
-            rewind : true,
             pagination : false,
             arrows : false,
             width : '100%',
             height : '100vh',
             autoplay : true,
-            interval : 2500,
-            easing : "linear"
+            rewind : true,
+            rewindSpeed: 2000,
+            interval : 5000,
+            easing: 'ease-in-out',
+            speed : 2000
         } ); 
         splide.mount();
     })

@@ -29,9 +29,8 @@
 
             @include mq_sp {
                 position: absolute;
-                top: 10rem;
+                top: 50%;
                 left: 3rem;
-                transform: unset;
             }
 
             &__h2 {
@@ -40,7 +39,7 @@
                 text-transform: capitalize;
 
                 @include mq_sp {
-                    font-size: 5rem;
+                    font-size: 4rem;
                 }
             }
 
@@ -50,7 +49,7 @@
                 margin-top: 30px;
 
                 @include mq_sp {
-                    font-size: 2rem;
+                    font-size: 1.6rem;
                 }
             }
         }
