@@ -29,7 +29,7 @@
                 font-size: 1.7rem;
                 text-decoration: none;
                 font-weight: 500;
-                color: $background-color1;
+                color: inherit;
                 transform: translateY(-50%);
 
                 @include mq_sp {
@@ -47,6 +47,11 @@
                     border-radius: 100px;
                     margin-left: -15px;
                     position: relative;
+
+                    &.is-scroll {
+                        background-color: $text-color1;
+                        color: $background-color1;
+                    }
 
                     @include mq_sp {
                         margin-left: 0;

@@ -14,10 +14,13 @@
 
 // Object
 // - Component
+@import 'object/component/button';
 @import 'object/component/post-category';
 @import 'object/component/post-list';
 @import 'object/component/recent-post';
 @import 'object/component/topic-path';
+@import 'object/component/heading';
+
 
 // - Page
 @import 'object/page/index';

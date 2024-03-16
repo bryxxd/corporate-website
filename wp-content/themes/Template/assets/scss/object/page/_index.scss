@@ -54,4 +54,69 @@
             }
         }
     }
+
+    &__about {
+        margin: 120px 0;
+
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            gap: 30px;
+            padding-top: 100px;
+
+            &__photos {
+                width: 45%;
+                position: sticky;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                flex-shrink: 0;
+
+                &__figure {
+                    position: absolute;
+
+                    &__target {
+                        opacity: 0;
+                        transform: translateX(-50px);
+                        transition: opacity 1s, transform 1s;
+                        will-change: opacity, transform;
+
+                        &.visible-item {
+                            transform: translateX(0);
+                            opacity: 1;
+                        }
+                    }
+
+                    &__img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            &__details {
+                &__item {
+                    padding: 18rem 0 35rem;
+                    margin-top: 25rem;
+
+                    &__title {
+                        font-size: 40px;
+                    }
+
+                    &__p {
+                        font-size: 20px;
+                        padding-top: 20px;
+                        padding-right: 20px;
+                        padding-bottom: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__news {
+        height: 150vh;
+    }
 }
