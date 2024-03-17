@@ -20,7 +20,7 @@
   $(function () {
     // service section
     const options = {
-      threshold: 0.3
+      threshold: [0.3, 0.5]
     }
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {

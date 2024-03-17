@@ -22,11 +22,11 @@
         transition-duration: 0.2s;
     }
 
-    &:hover {
-        opacity: 1;
-
-        &::after {
-            transform : translateY(5px) translateX(5px);
+    @include mq_pc {
+        &:hover {
+            &::after {
+                transform : translateY(5px) translateX(5px);
+            }
         }
     }
 }
