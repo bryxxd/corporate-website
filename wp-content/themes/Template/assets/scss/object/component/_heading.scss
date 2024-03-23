@@ -2,4 +2,8 @@
     font-size: 4rem;
     font-family: $font-poppins;
     text-align: center;
+
+    @include mq_sp {
+        font-size: 3rem;
+    }
 }

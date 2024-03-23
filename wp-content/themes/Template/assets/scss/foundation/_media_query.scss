@@ -5,7 +5,7 @@
 }
 
 @mixin mq_sp {
-    @media screen and (max-width: $sp-width-breakpoint + px) {
+    @media screen and (max-width: ($sp-width-breakpoint + 1) + px) {
         @content
      }
 }

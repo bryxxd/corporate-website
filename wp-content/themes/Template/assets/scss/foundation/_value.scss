@@ -13,15 +13,11 @@ $secondary-btn : #6c757d;
 $pc-layout-width: 1000;
 $pc-window-gap: 4rem;
 $pc-min-width: calc(#{$pc-layout-width}px + #{$pc-window-gap * 2});
-$pc-grid-gap: 2rem;
-$pc-grid-steps: 12;
 
 //For sp
 $sp-width: 375;
 $sp-width-breakpoint: $sp-width * 2;
 $sp-window-gap: 1.5rem;
-$sp-grid-gap: 0.5rem;
-$sp-grid-steps: 12;
 
 //Colors 
 $background-color1: #fff;

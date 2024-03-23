@@ -15,10 +15,12 @@
             transition: 0.2s;
             opacity: 0;
             z-index: -1;
+            display: none;
 
             .is-view & {
                 opacity: 1;
                 z-index: 9;
+                display: inline-flex;
             }
         }
   

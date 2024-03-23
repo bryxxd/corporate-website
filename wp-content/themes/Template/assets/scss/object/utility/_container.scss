@@ -8,4 +8,13 @@
         max-width: auto;
         padding: 0 $sp-window-gap;
     }
+
+    &-sp-only {
+        max-width: 100%;
+        padding: 0;
+
+        @include mq_sp {
+            padding: 0 $sp-window-gap;
+        }
+    }
 }
