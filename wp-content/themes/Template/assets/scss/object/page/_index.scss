@@ -62,7 +62,7 @@
             display: flex;
             justify-content: space-between;
             align-items: start;
-            gap: 30px;
+            gap: 55px;
             padding-top: 100px;
 
             &__photos {
@@ -98,7 +98,7 @@
 
             &__details {
                 &__item {
-                    padding: 18rem 0 35rem;
+                    padding: 18rem 8rem 35rem 0;
                     margin-top: 25rem;
 
                     &__title {
@@ -107,9 +107,8 @@
 
                     &__p {
                         font-size: 20px;
-                        padding-top: 20px;
-                        padding-right: 20px;
-                        padding-bottom: 40px;
+                        padding: 20px 0 40px;
+                        text-align: justify;
                     }
                 }
             }
