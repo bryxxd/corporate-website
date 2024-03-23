@@ -1,7 +1,7 @@
 (function ($) {
   // mv slider
   $(function () {
-    var splide = new Splide('.p-index__mv__slide', {
+    var mvSlide = new Splide('.p-index__mv__slide', {
       type: 'fade',
       pagination: false,
       arrows: false,
@@ -14,7 +14,7 @@
       easing: 'ease-in-out',
       speed: 2000
     });
-    splide.mount();
+    mvSlide.mount();
   });
 
   $(function () {
@@ -45,7 +45,7 @@
 
   // gallery slide to left
   $(function () {
-    var splide = new Splide('.p-index__gallery__slider--left', {
+    var galleryLeft = new Splide('.p-index__gallery__slider--left', {
       type: "loop",
       arrows: false,
       pagination: false,
@@ -61,31 +61,68 @@
         speed: 1.5,
       }
     });
-    splide.mount(window.splide.Extensions)
-    splide.mount();
+    galleryLeft.mount(window.splide.Extensions)
+    galleryLeft.mount();
   });
 
-    // gallery slide to rights
-    $(function () {
-      var splide = new Splide('.p-index__gallery__slider--right', {
-        type: "loop",
-        arrows: false,
-        pagination: false,
-        direction: 'rtl',
-        drag: false,
-        pauseOnFocus: false,
+  // gallery slide to rights
+  $(function () {
+    var galleryRight = new Splide('.p-index__gallery__slider--right', {
+      type: "loop",
+      arrows: false,
+      pagination: false,
+      direction: 'rtl',
+      drag: false,
+      pauseOnFocus: false,
+      pauseOnHover: false,
+      gap: '3rem',
+      fixedWidth: '27rem',
+      autoScroll: {
         pauseOnHover: false,
-        gap: '3rem',
-        fixedWidth: '27rem',
-        autoScroll: {
-          pauseOnHover: false,
-          pauseOnFocus: false,
-          speed: 1.5,
-        }
-      });
-      splide.mount(window.splide.Extensions)
-      splide.mount();
+        pauseOnFocus: false,
+        speed: 1.5,
+      }
     });
+    galleryRight.mount(window.splide.Extensions)
+    galleryRight.mount();
+  });
+
+  // blog post slider
+  $(function () {
+    var blogSlide = new Splide('.p-index__blog__post', {
+      type: "slide",
+      gap: '3rem',
+      padding: { left: '15rem', right: '2rem' },
+      perPage: 3,
+      perMove: 1,
+      pagination: false,
+      omitEnd : true,
+      classes: {
+        arrows: 'splide__arrows p-index__blog__post__arrows',
+        arrows: 'splide__arrows p-index__blog__post__arrows',
+        prev: 'splide__arrow--prev p-index__blog__post__arrows__btn p-index__blog__post__arrows__btn--prev',
+        next: 'splide__arrow--next p-index__blog__post__arrows__btn p-index__blog__post__arrows__btn--next',
+      },
+      breakpoints: {
+        751: {
+          padding : { left : '2rem', right : '2rem'},
+          perPage : 1
+        },
+      }
+    });
+
+  
+    blogSlide.mount();
+
+    var bar = blogSlide.root.querySelector('.p-index__blog__post__progress__wrapper__bar');
+
+    // Updates the bar width whenever the carousel moves:
+    blogSlide.on('mounted move', function () {
+      var end = blogSlide.Components.Controller.getEnd() + 1;
+      var rate = Math.min((blogSlide.index + 1) / end, 1);
+      bar.style.width = String(100 * rate) + '%';
+    });
+  });
 
 })(jQuery.noConflict());
 

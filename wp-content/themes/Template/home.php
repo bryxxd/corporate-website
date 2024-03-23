@@ -132,7 +132,53 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
             </div>
         </section>
 
-        <section class="p-index__blog"></section>
+        <section class="p-index__blog">
+            <div class="heading">
+                <h2 class="heading__h2">Blog</h2>
+            </div>
+
+            <div class="splide p-index__blog__post" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <?php
+                        $i = 0;
+                        while ($i <= 5) :
+                            $i++;
+                        ?>
+                            <li class="splide__slide p-index__blog__post__li">
+                                <a href="#" class="p-index__blog__post__anchor">
+                                    <img class="p-index__blog__post__anchor__image" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-gallery-img8.jpg" alt="gallery 8">
+                                    <div class="p-index__blog__post__anchor__info">
+                                        <p class="p-index__blog__post__anchor__info__title">Post Title</p>
+                                        <p class="p-index__blog__post__anchor__info__category">Post Category</p>
+                                    </div>
+                                    <p class="p-index__blog__post__anchor__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae accusamus illo autem hic inventore voluptate accusantium sint amet consectetur, laboriosam tenetur rem fuga quasi adipisci! Ipsa porro vero non aliquam.</p>
+                                </a>
+                            </li>
+                        <?php endwhile; ?>
+                    </ul>
+                </div>
+                <div class="p-index__blog__post__progress">
+                    <div class="p-index__blog__post__progress__wrapper d-pc-only">
+                        <div class="p-index__blog__post__progress__wrapper__bar"></div>
+                    </div>
+                    <div class="splide__arrows p-index__blog__post__arrows">
+                        <button class="splide__arrow--prev p-index__blog__post__arrows__btn p-index__blog__post__arrows__btn--prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false">
+                                <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path>
+                            </svg>
+                        </button>
+                        <button class="splide__arrow--next p-index__blog__post__arrows__btn p-index__blog__post__arrows__btn--next">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false">
+                                <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
     </div>
 </main>
 <?php get_footer(); ?>

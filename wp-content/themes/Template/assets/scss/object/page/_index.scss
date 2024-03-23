@@ -185,6 +185,123 @@
     }
 
     &__blog {
-        height: 100vh;
+        margin: 200px 0;
+
+        &__post {
+            &__anchor {
+                text-decoration: none;
+
+                &__image {
+                    width: 100%;
+                }
+
+                &__info {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 1rem 0;
+
+                    &__title {
+                        font-size: 3rem;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                    }
+
+                    &__category {
+                        font-size: 2rem;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                    }
+
+                }
+
+                &__desc {
+                    font-size: 2.2rem;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+            }
+
+            &__arrows {
+                display: flex;
+                justify-content: space-between;
+                width: 25rem;
+
+                @include mq_sp {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 15rem;
+                    margin-left: auto;
+                }
+    
+                &__btn {
+                    background-color: $text-color1 !important;
+                    width: 10rem !important;
+                    height: 10rem !important;
+                    border-radius: 50%;
+                    appearance: none;
+                    border: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    @include mq_sp {
+                        width: 5rem !important;
+                        height: 5rem !important;
+                    }
+
+                    &:disabled {
+                        opacity: 0.8;
+                        cursor: not-allowed;
+                    }
+
+                    svg {
+                        fill: #fff;
+                        width: 5rem;
+                        height: 3rem;
+
+                        @include mq_sp {
+                            width: 3rem;
+                            height: 1.5rem;
+                        }
+                    }
+                }
+            }
+
+            &__progress {
+                margin: 5rem 5rem 0 15rem;
+                position: relative;
+                display: flex;
+                gap: 8rem;
+                align-items: center;
+
+                @include mq_sp {
+                    margin: 5rem 2rem 0 0;
+                }
+
+
+                &__wrapper {
+                    background-color: $background-color2;
+                    height: 1rem;
+                    width: 70%;
+
+                    &__bar {
+                        background: rgb(242, 241, 239);
+                        background: linear-gradient(90deg, rgba(242, 241, 239, 1) 0%, rgba(34, 34, 34, 0.9501050420168067) 80%);
+                        height: 100%;
+                        transition: width 400ms ease;
+                        width: 0;
+                    }
+                }
+
+            }
+        }
     }
 }
