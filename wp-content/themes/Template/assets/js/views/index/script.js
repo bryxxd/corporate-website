@@ -1,7 +1,7 @@
 (function ($) {
   // mv slider
   $(function () {
-    var splide = new Splide('.splide', {
+    var splide = new Splide('.p-index__mv__slide', {
       type: 'fade',
       pagination: false,
       arrows: false,
@@ -42,6 +42,50 @@
     const observedElements = document.querySelectorAll('.p-index__about__inner__details__item__target');
     observedElements.forEach(el => observer.observe(el));
   });
+
+  // gallery slide to left
+  $(function () {
+    var splide = new Splide('.p-index__gallery__slider--left', {
+      type: "loop",
+      arrows: false,
+      pagination: false,
+      drag: false,
+      direction: 'ltr',
+      pauseOnFocus: false,
+      pauseOnHover: false,
+      gap: '3rem',
+      fixedWidth: '27rem',
+      autoScroll: {
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        speed: 1.5,
+      }
+    });
+    splide.mount(window.splide.Extensions)
+    splide.mount();
+  });
+
+    // gallery slide to rights
+    $(function () {
+      var splide = new Splide('.p-index__gallery__slider--right', {
+        type: "loop",
+        arrows: false,
+        pagination: false,
+        direction: 'rtl',
+        drag: false,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        gap: '3rem',
+        fixedWidth: '27rem',
+        autoScroll: {
+          pauseOnHover: false,
+          pauseOnFocus: false,
+          speed: 1.5,
+        }
+      });
+      splide.mount(window.splide.Extensions)
+      splide.mount();
+    });
 
 })(jQuery.noConflict());
 

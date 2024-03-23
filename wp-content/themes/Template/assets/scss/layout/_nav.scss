@@ -23,7 +23,7 @@
                 display: inline-flex;
             }
         }
-  
+
         &__li {
             padding: 0 2rem;
 
@@ -37,7 +37,7 @@
                 @include mq_sp {
                     color: #000;
                 }
-                
+
                 &:hover {
                     opacity: 0.7;
                 }
@@ -50,7 +50,7 @@
                     margin-left: -15px;
                     position: relative;
 
-                    &.is-scroll {
+                    &.is-scrolled {
                         background-color: $text-color1;
                         color: $background-color1;
                     }
@@ -62,7 +62,7 @@
             }
         }
     }
-    
+
     &__menu {
         @include mq_sp {
             position: absolute;
@@ -70,8 +70,8 @@
             right: 2rem;
             z-index: 9999;
         }
-        
-        &__button{
+
+        &__button {
             background: none;
             border: none;
             width: 2rem;
@@ -95,6 +95,10 @@
                 &:nth-child(3) {
                     bottom: 0;
                 }
+
+                .is-scrolled & {
+                    background-color: $text-color2;
+                }
             }
 
             .is-view & {
@@ -107,7 +111,7 @@
                     }
 
                     &:nth-child(2) {
-                       display: none;
+                        display: none;
                     }
 
                     &:nth-child(3) {

@@ -1,9 +1,19 @@
 .heading {
-    font-size: 4rem;
+    font-size: 6rem;
     font-family: $font-poppins;
     text-align: center;
 
     @include mq_sp {
         font-size: 3rem;
+    }
+
+    @include mq_pc {
+        position: relative;
+        height: 75vh;
+
+        &__h2 {
+            position: sticky;
+            top: calc(50% - 200px);
+        }
     }
 }

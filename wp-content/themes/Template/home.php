@@ -3,6 +3,7 @@ get_header();
 
 wp_enqueue_script('home', get_template_directory_uri() . '/assets/js/views/index/script.js', array('jquery'), 1.1, true);
 wp_enqueue_script('splide', get_template_directory_uri() . '/assets/js/splide/splide.min.js', array('jquery'), 1.1, true);
+wp_enqueue_script('splide-extension', get_template_directory_uri() . '/assets/js/splide/splide-extension-auto-scroll.min.js', array('jquery'), 1.1, true);
 wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/splide/splide.min.css', false, '1.1', 'all');
 ?>
 
@@ -13,19 +14,13 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            <img class="p-index__mv__slide__img"
-                                src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-mv-1.jpg"
-                                alt="Slider Image">
+                            <img class="p-index__mv__slide__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-mv-1.jpg" alt="Slider Image">
                         </li>
                         <li class="splide__slide">
-                            <img class="p-index__mv__slide__img"
-                                src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-mv-2.jpg"
-                                alt="Slider Image">
+                            <img class="p-index__mv__slide__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-mv-2.jpg" alt="Slider Image">
                         </li>
                         <li class="splide__slide">
-                            <img class="p-index__mv__slide__img"
-                                src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-mv-3.jpg"
-                                alt="Slider Image">
+                            <img class="p-index__mv__slide__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-mv-3.jpg" alt="Slider Image">
                         </li>
                     </ul>
                 </div>
@@ -43,19 +38,13 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
             <div class="p-index__about__inner">
                 <div class="p-index__about__inner__photos d-pc-only" id="photos">
                     <figure class="p-index__about__inner__photos__figure ">
-                        <img class="p-index__about__inner__photos__figure__img"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-about-figure1.jpg"
-                            alt="About Figure">
+                        <img class="p-index__about__inner__photos__figure__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-about-figure1.jpg" alt="About Figure">
                     </figure>
                     <figure class="p-index__about__inner__photos__figure p-index__about__inner__photos__figure__target">
-                        <img class="p-index__about__inner__photos__figure__img"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-about-figure2.jpg"
-                            alt="About Figure">
+                        <img class="p-index__about__inner__photos__figure__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-about-figure2.jpg" alt="About Figure">
                     </figure>
                     <figure class="p-index__about__inner__photos__figure p-index__about__inner__photos__figure__target">
-                        <img class="p-index__about__inner__photos__figure__img"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-about-figure3.jpg"
-                            alt="About Figure">
+                        <img class="p-index__about__inner__photos__figure__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-about-figure3.jpg" alt="About Figure">
                     </figure>
                 </div>
                 <div class="p-index__about__inner__details">
@@ -93,9 +82,57 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
             </div>
         </section>
 
-        <section class="p-index__news">
+        <section class="p-index__gallery">
+            <div class="heading">
+                <h2 class="heading__h2">Gallery</h2>
+            </div>
 
+            <div class="splide p-index__gallery__slider  p-index__gallery__slider--left" role="group" aria-label="Gallery Slide">
+                <div class="splide__track">
+                    <ul class="p-index__gallery__slider splide__list">
+                        <li class="p-index__gallery__slider__li splide__slide">
+                            <img class="p-index__gallery__slider__li__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-gallery-img1.jpg" alt="gallery 1">
+                        </li>
+                        <li class="p-index__gallery__slider__li splide__slide">
+                            <img class="p-index__gallery__slider__li__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-gallery-img2.jpg" alt="gallery 2">
+                        </li>
+                        <li class="p-index__gallery__slider__li splide__slide">
+                            <img class="p-index__gallery__slider__li__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-gallery-img3.jpg" alt="gallery 3">
+                        </li>
+                        <li class="p-index__gallery__slider__li splide__slide">
+                            <img class="p-index__gallery__slider__li__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-gallery-img4.jpg" alt="gallery 4">
+                        </li>
+                        <li class="p-index__gallery__slider__li splide__slide">
+                            <img class="p-index__gallery__slider__li__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-gallery-img5.jpg" alt="gallery 5">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="splide p-index__gallery__slider  p-index__gallery__slider--right" role="group" aria-label="Gallery Slide">
+                <div class="splide__track">
+                    <ul class="p-index__gallery__slider splide__list">
+                        <li class="p-index__gallery__slider__li splide__slide">
+                            <img class="p-index__gallery__slider__li__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-gallery-img6.jpg" alt="gallery 6">
+                        </li>
+                        <li class="p-index__gallery__slider__li splide__slide">
+                            <img class="p-index__gallery__slider__li__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-gallery-img7.jpg" alt="gallery 7">
+                        </li>
+                        <li class="p-index__gallery__slider__li splide__slide">
+                            <img class="p-index__gallery__slider__li__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-gallery-img8.jpg" alt="gallery 8">
+                        </li>
+                        <li class="p-index__gallery__slider__li splide__slide">
+                            <img class="p-index__gallery__slider__li__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-gallery-img9.jpg" alt="gallery 9">
+                        </li>
+                        <li class="p-index__gallery__slider__li splide__slide">
+                            <img class="p-index__gallery__slider__li__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-gallery-img10.jpg" alt="gallery 10">
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
+
+        <section class="p-index__blog"></section>
     </div>
 </main>
 <?php get_footer(); ?>
