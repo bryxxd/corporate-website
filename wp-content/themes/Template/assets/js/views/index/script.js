@@ -62,7 +62,6 @@
       }
     });
     galleryLeft.mount(window.splide.Extensions)
-    galleryLeft.mount();
   });
 
   // gallery slide to rights
@@ -84,7 +83,6 @@
       }
     });
     galleryRight.mount(window.splide.Extensions)
-    galleryRight.mount();
   });
 
   // blog post slider
@@ -95,6 +93,7 @@
       padding: { left: '15rem', right: '2rem' },
       perPage: 3,
       perMove: 1,
+      drag: false,
       pagination: false,
       omitEnd : true,
       classes: {
@@ -106,7 +105,9 @@
       breakpoints: {
         751: {
           padding : { left : '2rem', right : '2rem'},
-          perPage : 1
+          perPage : 1,
+          perMove: 1,
+          autoHeight : true,
         },
       }
     });
@@ -115,7 +116,10 @@
     blogSlide.mount();
 
     var bar = blogSlide.root.querySelector('.p-index__blog__post__progress__wrapper__bar');
-
+    var end = blogSlide.Components.Controller.getEnd() + 1;
+    var rate = Math.min((blogSlide.index + 1) / end, 1);
+    bar.style.width = String(100 * rate) + '%';
+    
     // Updates the bar width whenever the carousel moves:
     blogSlide.on('mounted move', function () {
       var end = blogSlide.Components.Controller.getEnd() + 1;
