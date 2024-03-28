@@ -2,7 +2,7 @@
     <div class="footer__inner u-container">
         <div class="footer__copyright">
             <p class="footer__copyright__p">
-                &copy;<?php echo esc_html(date('Y')); ?> Wordpress Theme | Develop by Bryxx
+                &copy;<?php echo esc_html(date('Y')); ?> Blog Website | Develop by Bryxx
             </p>
         </div>
     </div>

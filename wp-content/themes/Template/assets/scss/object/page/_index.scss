@@ -56,7 +56,7 @@
     }
 
     &__about {
-        margin-top: 150px;
+        margin-top: 400px;
 
         @include mq_sp {
             margin-top: 12rem;
@@ -143,17 +143,25 @@
     }
 
     &__gallery {
-        margin-top: 200px;
+        margin: 400px 0;
 
         @include mq_sp {
-            margin-top: 0;
+            margin: 0;
         }
 
         &__slider {
-            margin-top: 80px;
+            margin-top: 10rem;
+
+            @include mq_sp {
+                margin-top: 4rem;
+            }
 
             &--right {
                 margin-top: 6rem;
+
+                @include mq_sp {
+                    margin-top: 3rem;
+                }
             }
 
             &__li {
@@ -185,9 +193,19 @@
     }
 
     &__blog {
-        margin: 200px 0;
+        margin: 400px 0 200px;
+
+        @include mq_sp {
+            margin: 15rem 0;
+        }
 
         &__post {
+            margin-top: 10rem;
+
+            @include mq_sp {
+                margin-top: 3rem;
+            }
+
             &__anchor {
                 text-decoration: none;
 
@@ -197,6 +215,7 @@
 
                 &__title {
                     font-size: 3rem;
+                    font-weight: 500;
                     display: -webkit-box;
                     -webkit-line-clamp: 2;
                     -webkit-box-orient: vertical;
@@ -225,7 +244,7 @@
                 @include mq_sp {
                     display: flex;
                     justify-content: space-between;
-                    width: 15rem;
+                    width: 13rem;
                     margin-left: auto;
                 }
 
@@ -272,7 +291,7 @@
                 align-items: center;
 
                 @include mq_sp {
-                    margin: 5rem 2rem 0 0;
+                    margin: 2rem 2rem 0 0;
                 }
 
 

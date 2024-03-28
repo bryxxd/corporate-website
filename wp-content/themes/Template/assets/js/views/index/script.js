@@ -59,6 +59,15 @@
         pauseOnHover: false,
         pauseOnFocus: false,
         speed: 1.5,
+      },
+      breakpoints: {
+        751: {
+          autoScroll: {
+            pauseOnHover: false,
+            pauseOnFocus: false,
+            speed: 0.8,
+          },
+        },
       }
     });
     galleryLeft.mount(window.splide.Extensions)
@@ -80,6 +89,15 @@
         pauseOnHover: false,
         pauseOnFocus: false,
         speed: 1.5,
+      },
+      breakpoints: {
+        751: {
+          autoScroll: {
+            pauseOnHover: false,
+            pauseOnFocus: false,
+            speed: 0.8,
+          },
+        },
       }
     });
     galleryRight.mount(window.splide.Extensions)

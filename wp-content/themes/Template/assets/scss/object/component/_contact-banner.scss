@@ -10,6 +10,11 @@
     position: relative;
     transition: 6s width;
 
+    @include mq_sp {
+        font-size: 5rem;
+        padding: 10rem 0;
+    }
+
     &__text {
         position: relative;
         font: inherit;
