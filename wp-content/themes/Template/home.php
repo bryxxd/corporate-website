@@ -175,10 +175,11 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
                         </button>
                     </div>
                 </div>
-
             </div>
-
         </section>
     </div>
+    
+    <?php get_template_part('./template/contact-banner') ?>
+
 </main>
 <?php get_footer(); ?>
