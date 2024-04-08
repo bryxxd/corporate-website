@@ -144,6 +144,14 @@
       var rate = Math.min((blogSlide.index + 1) / end, 1);
       bar.style.width = String(100 * rate) + '%';
     });
+
+    // hide progress when post is less than or equal to 3
+    var postLength = $('.p-index__blog__post__li');
+    var progress = $('.p-index__blog__post__progress');
+
+    if(postLength.length <= 3) {
+      progress.css("display", "none");
+    }
   });
 
 })(jQuery.noConflict());
