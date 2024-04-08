@@ -9,6 +9,11 @@
     top: 0;
     z-index: 9999;
     color: $background-color1;
+
+    &.is-sub {
+       color: $text-color1;
+       background-color: $background-color1
+    }
     
     @include mq_sp {
         padding: 1rem 1.5rem;

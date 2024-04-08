@@ -1,4 +1,20 @@
 (function ($) {
+  // scroll nav
+  $(function () {
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+      if (scroll >= 600) {
+        $(".header").addClass("is-scrolled");
+        $(".is-contact").addClass("is-scrolled");
+        $(".nav__menu__button__line").addClass("is-scrolled");
+      } else {
+        $(".header").removeClass("is-scrolled");
+        $(".is-contact").removeClass("is-scrolled");
+        $(".nav__menu__button__line").addClass("is-scrolled");
+      }
+    });
+  });
+
   // mv slider
   $(function () {
     var mvSlide = new Splide('.p-index__mv__slide', {
@@ -113,7 +129,7 @@
       perMove: 1,
       drag: false,
       pagination: false,
-      omitEnd : true,
+      omitEnd: true,
       classes: {
         arrows: 'splide__arrows p-index__blog__post__arrows',
         arrows: 'splide__arrows p-index__blog__post__arrows',
@@ -122,22 +138,22 @@
       },
       breakpoints: {
         751: {
-          padding : { left : '2rem', right : '2rem'},
-          perPage : 1,
+          padding: { left: '2rem', right: '2rem' },
+          perPage: 1,
           perMove: 1,
-          autoHeight : true,
+          autoHeight: true,
         },
       }
     });
 
-  
+
     blogSlide.mount();
 
     var bar = blogSlide.root.querySelector('.p-index__blog__post__progress__wrapper__bar');
     var end = blogSlide.Components.Controller.getEnd() + 1;
     var rate = Math.min((blogSlide.index + 1) / end, 1);
     bar.style.width = String(100 * rate) + '%';
-    
+
     // Updates the bar width whenever the carousel moves:
     blogSlide.on('mounted move', function () {
       var end = blogSlide.Components.Controller.getEnd() + 1;
@@ -149,7 +165,7 @@
     var postLength = $('.p-index__blog__post__li');
     var progress = $('.p-index__blog__post__progress');
 
-    if(postLength.length <= 3) {
+    if (postLength.length <= 3) {
       progress.css("display", "none");
     }
   });

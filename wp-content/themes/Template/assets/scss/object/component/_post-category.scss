@@ -1,28 +1,31 @@
 .post-category {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    padding: 1rem 0 5rem;
+    gap: 2rem;
+    padding: 8rem 0;
     flex-wrap: wrap;
+    font-size: 2rem;
 
     @include mq_sp {
         align-items: center;
+        justify-content: start;
+        padding: 3rem 0;
     }
 
     &__anchor {
         display: inline-flex;
-        background: #000;
-        color: #Fff;
-        width: 150px;
+        color: #000;
         justify-content: center;
         align-items: center;
-        height: 50px;
         text-decoration: none;
+        padding: 10px 40px;
+        background: #fff;
+        border: 1px solid #000;
 
         &.is-active {
-            background: #fff;
             border: 1px solid #000;
-            color: #000;
+            background: #000;
+            color: #fff;
         }
     }
 }

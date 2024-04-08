@@ -1,17 +1,21 @@
 <?php get_header(); ?>
-<div class="topic-path">
-    <ul>
-        <li class="topic-path__li">
+<div class="hero">
+    <div class="hero__inner">
+        <h1 class="hero__inner__heading">Blog</h1>
+    </div>
+    <ul class="hero__topic-path">
+        <li class="hero__topic-path__li">
             <a href="<?php echo home_url('/') ?>">Home</a>
         </li>
-        <li class="topic-path__li">
+        <li class="hero__topic-path__li">
             <span>Blog</span>
         </li>
     </ul>
+</div
 </div>
+>
 <main>
     <div class="container">
-
         <ul class="post-category">
             <li class="post-category__li">
                 <a href="<?php echo home_url('/blog/') ?>" class="post-category__anchor <?php echo !is_category() ? 'is-active' : '' ?>">
@@ -19,7 +23,7 @@
                 </a>
             </li>
             <?php
-            $categories = get_categories(['hide_empty' => false]);
+            $categories = get_categories(['hide_empty' => true]);
             foreach ($categories as $category) :
             ?>
                 <li class="post-category__li">
@@ -31,11 +35,12 @@
         </ul>
 
 
-        <div class="post-list">
+        <ul class="post-list">
             <?php
             while (have_posts()) : the_post();
                 $categories = get_the_category() ?? [];
             ?>
+            <li class="post-list__li">
                 <a href="<?php the_permalink(); ?>" class="post-list__item">
                     <div class="post-list__thumb">
                         <?php if (has_post_thumbnail()) :
@@ -54,9 +59,12 @@
                         <div class="post-list__text__title"><?php the_title(); ?></div>
                     </div>
                 </a>
+            </li>
             <?php endwhile; ?>
-        </div>
+        </ul>
     </div>
+    
+    <?php get_template_part('./template/contact-banner') ?>
 
 </main>
 <?php get_footer(); ?>

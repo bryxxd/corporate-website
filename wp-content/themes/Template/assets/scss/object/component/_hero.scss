@@ -1,0 +1,55 @@
+.hero {
+    margin-top: 15rem;
+    padding: 0 120px;
+
+    @include mq_sp {
+        padding: 0 2rem;
+        margin-top: 6rem;
+    }
+
+    &__inner {
+        &__heading {
+            font-size: 10rem;
+
+            @include mq_sp {
+                font-size: 8rem;
+            }
+        }
+    }
+
+    &__topic-path {    
+        padding-left: 0.5rem;
+
+        @include mq_sp {
+            padding: 1rem 0.5rem;
+        }
+    
+    
+        &__li {
+            display: inline-block;
+            position: relative;
+            font-size: 2rem;
+    
+            &::after {
+                content: ">";
+                font-size: 1.5rem;
+                margin: auto 1rem;
+                vertical-align: middle;
+    
+                @include mq_sp {
+                    margin: auto 0.2rem;
+                    font-size: 1rem;
+                }
+            }
+    
+            &:last-child::after {
+                content: none;
+            }
+    
+            & span {
+                font-weight: bold;
+            }
+        }
+    
+    }
+}

@@ -12,7 +12,7 @@
     <?php wp_head() ?>
 </head>
 
-<header class="header">
+<header class="header <?php if (!is_front_page()): ?>is-sub<?php endif ?>">
     <div class="header__info">
         <?php if (is_front_page()): ?>
             <h1 class="header__info__title">Logo</h1>
@@ -22,7 +22,7 @@
     </div>
     <nav class="nav">
         <p class="nav__menu d-sp-only">
-            <button class="nav__menu__button">
+            <button class="nav__menu__button <?php if (!is_front_page()): ?>is-scrolled<?php endif ?>">
                 <span class="nav__menu__button__line"></span>
                 <span class="nav__menu__button__line"></span>
                 <span class="nav__menu__button__line"></span>
@@ -39,7 +39,7 @@
                 <a href="<?php echo home_url('/about/') ?>" class="nav__ul__li__a">About</a>
             </li>
             <li class="nav__ul__li">
-                <a href="<?php echo home_url('/contact/') ?>" class="nav__ul__li__a is-contact">Contact</a>
+                <a href="<?php echo home_url('/contact/') ?>" class="nav__ul__li__a <?php if (is_front_page()): ?>is-contact<?php else : ?>is-contact is-scrolled<?php endif ?>">Contact</a>
             </li>
         </ul>
     </nav>
