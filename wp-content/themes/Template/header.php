@@ -15,9 +15,13 @@
 <header class="header <?php if (!is_front_page()): ?>is-sub<?php endif ?>">
     <div class="header__info">
         <?php if (is_front_page()): ?>
-            <h1 class="header__info__title">Logo</h1>
+            <h1 class="header__info__title">
+                <a href="<?php echo home_url('/') ?>">Logo</a>
+            </h1>
         <?php else: ?>
-            <p class="header__info__title">Logo</p>
+            <p class="header__info__title">
+                <a href="<?php echo home_url('/') ?>">Logo</a>
+            </p>
         <?php endif ?>
     </div>
     <nav class="nav">

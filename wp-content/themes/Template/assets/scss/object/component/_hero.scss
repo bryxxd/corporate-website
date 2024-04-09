@@ -1,15 +1,18 @@
 .hero {
     margin-top: 15rem;
-    padding: 0 120px;
 
     @include mq_sp {
-        padding: 0 2rem;
         margin-top: 6rem;
     }
 
     &__inner {
         &__heading {
             font-size: 10rem;
+            line-height: 12rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
 
             @include mq_sp {
                 font-size: 8rem;
@@ -19,6 +22,8 @@
 
     &__topic-path {    
         padding-left: 0.5rem;
+        margin: 2rem 0;
+        display: flex;
 
         @include mq_sp {
             padding: 1rem 0.5rem;
@@ -29,6 +34,11 @@
             display: inline-block;
             position: relative;
             font-size: 2rem;
+
+            @include mq_sp {
+                font-size: 1.6rem;
+                margin-right: 0.5rem;
+            }
     
             &::after {
                 content: ">";
@@ -49,7 +59,17 @@
             & span {
                 font-weight: bold;
             }
+
+            &.title {
+                width: 80%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+
+                @include mq_sp {
+                    width: 60%;
+                }
+            }
         }
-    
     }
 }

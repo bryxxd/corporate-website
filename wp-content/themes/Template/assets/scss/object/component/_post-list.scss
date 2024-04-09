@@ -30,6 +30,7 @@
     }
 
     &__li {
+        list-style-type: none;
         width: 48%;
 
         @include mq_sp {
