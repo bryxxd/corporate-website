@@ -11,9 +11,7 @@
             <span>Blog</span>
         </li>
     </ul>
-</div
 </div>
->
 <main>
     <div class="container">
         <ul class="post-category">
