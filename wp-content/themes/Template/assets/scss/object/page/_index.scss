@@ -292,7 +292,7 @@
             }
 
             &__progress {
-                margin: 5rem 5rem 0 15rem;
+                margin: 5rem 5rem 12rem 15rem;
                 position: relative;
                 display: flex;
                 gap: 8rem;
@@ -317,7 +317,11 @@
                         width: 0;
                     }
                 }
+            }
 
+            &__more {
+                text-align: center;
+                margin-top: 8rem;
             }
         }
     }

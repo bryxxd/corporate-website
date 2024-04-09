@@ -46,7 +46,9 @@
                         <?php if (has_post_thumbnail()) :
                             the_post_thumbnail('post-thumbnail', ['class' => 'post-list__thumb__image',]);
                         else : ?>
-                            <div class="post-list__thumb__empty"></div>
+                            <img class="post-list__thumb__image"
+                                src="<?php echo get_template_directory_uri(); ?>/assets/img/common/post-placeholder.jpg"
+                                alt="Image Placeholder">
                         <?php endif; ?>
                     </div>
                     <div class="post-list__text">
@@ -62,6 +64,7 @@
             </li>
             <?php endwhile; ?>
         </ul>
+        <?php pagination() ?>
     </div>
     
     <?php get_template_part('./template/contact-banner') ?>

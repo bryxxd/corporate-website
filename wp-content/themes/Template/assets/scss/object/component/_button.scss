@@ -22,10 +22,15 @@
         transition-duration: 0.2s;
     }
 
+    &.is-big {
+        padding: 1rem 5rem;
+        font-size: 3rem;
+    }
+
     @include mq_pc {
         &:hover {
             &::after {
-                transform : translateY(5px) translateX(5px);
+                transform: translateY(5px) translateX(5px);
             }
         }
     }

@@ -183,7 +183,7 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
                 <h2 class="heading__h2">Blog</h2>
             </div>
 
-            <div class="splide p-index__blog__post" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide p-index__blog__post" role="group" aria-label="Blog Splide">
                 <div class="splide__track">
                     <ul class="splide__list">
                         <?php
@@ -242,6 +242,9 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
                         </button>
                     </div>
                 </div>
+            </div>
+            <div class="container p-index__blog__post__more">
+                <a class="button is-big" href="<?php echo home_url('/blog/') ?>">See more</a>
             </div>
         </section>
     </div>
