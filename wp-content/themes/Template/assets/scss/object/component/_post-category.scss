@@ -7,13 +7,18 @@
     font-size: 2rem;
 
     @include mq_sp {
-        align-items: center;
-        justify-content: start;
+        display: block;
         padding: 3rem 0;
     }
 
     &__li {
         list-style-type: none;
+
+        @include mq_sp {
+            & + & {
+                margin-top: 1.2rem;
+            }
+        }
     }
 
     &__anchor {
@@ -25,6 +30,11 @@
         padding: 10px 40px;
         background: #fff;
         border: 1px solid #000;
+
+        @include mq_sp {
+            display: block;
+            text-align: center;
+        }
 
         &.is-active {
             border: 1px solid #000;

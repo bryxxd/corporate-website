@@ -2,25 +2,20 @@
     margin-top: 15rem;
 
     @include mq_sp {
-        margin-top: 6rem;
+        margin-top: 10rem;
     }
 
-    &__inner {
-        &__heading {
-            font-size: 10rem;
-            line-height: 12rem;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
+    &__heading {
+        font-size: 10rem;
+        line-height: 12rem;
 
-            @include mq_sp {
-                font-size: 8rem;
-            }
+        @include mq_sp {
+            font-size: 4rem;
+            line-height: 5rem;
         }
     }
 
-    &__topic-path {    
+    &__topic-path {
         padding-left: 0.5rem;
         margin: 2rem 0;
         display: flex;
@@ -28,8 +23,8 @@
         @include mq_sp {
             padding: 1rem 0.5rem;
         }
-    
-    
+
+
         &__li {
             display: inline-block;
             position: relative;
@@ -39,37 +34,35 @@
                 font-size: 1.6rem;
                 margin-right: 0.5rem;
             }
-    
+
             &::after {
                 content: ">";
                 font-size: 1.5rem;
                 margin: auto 1rem;
                 vertical-align: middle;
-    
+
                 @include mq_sp {
                     margin: auto 0.2rem;
                     font-size: 1rem;
                 }
             }
-    
+
             &:last-child::after {
                 content: none;
             }
-    
+
             & span {
                 font-weight: bold;
             }
 
-            &.title {
-                width: 80%;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-
-                @include mq_sp {
-                    width: 60%;
-                }
+            &__title {
+                margin-top: 0.2rem;
+                display: inline-block;
             }
         }
+    }
+
+    &__post-date {
+        font-size: 1.8rem;
     }
 }
