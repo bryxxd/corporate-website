@@ -1,0 +1,123 @@
+.p-service {
+    margin-top: 10rem;
+
+    @include mq_sp {
+        margin-top: 3rem;
+    }
+
+    &__figure {
+        width: 100%;
+        height: 70rem;
+        object-fit: cover;
+
+        @include mq_sp {
+            height: 30rem;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 55px;
+        margin-top: 15rem;
+
+        @include mq_sp {
+            display: block;
+            margin-top: 10rem;
+        }
+
+        &__photos {
+            width: 45%;
+            position: sticky;
+            top: 20px;
+            left: 0;
+            height: 100vh;
+            flex-shrink: 0;
+
+            &__figure {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+
+                &__target {
+                    opacity: 0;
+                    transform: translateY(50px);
+                    transition: opacity 1s, transform 1s;
+                    will-change: opacity, transform;
+
+                    &.visible-item {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+
+                &__img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        &__details {
+            &__item {
+                padding: 18rem 8rem 35rem 0;
+                margin-top: 25rem;
+
+                @include mq_sp {
+                    padding: 0 0 5rem;
+                    margin-top: 6rem;
+                    text-align: center;
+                }
+
+                &__title {
+                    font-size: 4rem;
+
+                    @include mq_sp {
+                        font-size: 2.5rem;
+                        text-align: left;
+                    }
+                }
+
+                &__p {
+                    font-size: 2rem;
+                    padding: 2rem 0 4rem;
+                    text-align: justify;
+
+                    @include mq_sp {
+                        text-align: left;
+                        padding: 2rem 0 5rem;
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin: 10rem 0;
+        
+        &__context {
+            width: 580px;
+            
+            &__heading {
+                font-size: 4rem;
+                margin-bottom: 3rem;
+            }
+
+            &__p {
+                font-size: 2rem;
+            }
+        }
+
+        &__figure {
+            width: 550px;
+
+            &__img {
+                width: 100%;
+            }
+        }
+    }
+}

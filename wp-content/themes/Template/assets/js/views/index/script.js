@@ -42,7 +42,7 @@
       entries.forEach(entry => {
         const detailsItem = entry.target;
         const itemIndex = Array.from(observedElements).indexOf(detailsItem);
-        const images = document.querySelectorAll('.p-index__about__inner__photos__figure__target');
+        const images = document.querySelectorAll('.p-index__service__inner__photos__figure__target');
 
         if (entry.isIntersecting) {
           images.forEach(img => img.classList.remove('visible-item'));
@@ -55,7 +55,7 @@
         }
       });
     }, options);
-    const observedElements = document.querySelectorAll('.p-index__about__inner__details__item__target');
+    const observedElements = document.querySelectorAll('.p-index__service__inner__details__item__target');
     observedElements.forEach(el => observer.observe(el));
   });
 
