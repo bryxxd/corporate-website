@@ -95,26 +95,33 @@
     }
 
     &__content {
-        display: flex;
-        justify-content: space-between;
         margin: 10rem 0;
-        
+
+        &__heading {
+            font-size: 4rem;
+            margin-bottom: 3rem;
+        }
+
         &__context {
-            width: 580px;
-            
-            &__heading {
-                font-size: 4rem;
-                margin-bottom: 3rem;
+            font-size: 2rem;
+
+            &__img {
+                float: right;
+                margin-left: 2rem;
+                max-width: 500px;
+
+
+                @include mq_sp {
+                    float: none;
+                    max-width: 100%;
+                    margin: 0 0 1rem;
+                    display: block;
+                }
             }
 
-            &__p {
-                font-size: 2rem;
-            }
         }
 
         &__figure {
-            width: 550px;
-
             &__img {
                 width: 100%;
             }

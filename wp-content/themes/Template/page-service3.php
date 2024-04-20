@@ -3,7 +3,7 @@ get_header();
 ?>
 <div class="container">
     <div class="hero">
-        <h1 class="hero__heading">Service1</h1>
+        <h1 class="hero__heading">Service 3</h1>
         <ul class="hero__topic-path">
             <li class="hero__topic-path__li">
                 <a href="<?php echo home_url('/') ?>">Home</a>
@@ -12,14 +12,14 @@ get_header();
                 <a href="<?php echo home_url('/service') ?>">Service</a>
             </li>
             <li class="hero__topic-path__li">
-                <span>Service 1</span>
+                <span>Service 3</span>
             </li>
         </ul>
     </div>
 </div>
 <main>
     <section class="p-service">
-        <img class="p-service__figure" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/service/service1/img-service-figure1.jpg" width="100%" height="700px" alt="Service Figure">
+        <img class="p-service__figure" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/service/service3/img-service-figure1.jpg" width="100%" height="700px" alt="Service Figure">
 
         <div class="container">
             <div class="p-service__content">
