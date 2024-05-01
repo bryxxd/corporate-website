@@ -6,12 +6,14 @@ html {
         font-size: 2.6666666667vw;
     }
 }
-
-// Body
-body {
+//all
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+// Body
+body {
     min-width: $pc-min-width;
     position: relative;
     

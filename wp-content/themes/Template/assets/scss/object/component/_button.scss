@@ -8,7 +8,8 @@
     font-family: $font-poppins;
     position: relative;
     border: 1px solid #000;
-
+    cursor: pointer;
+    
     &::after {
         content: "";
         position: absolute;

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Wordpress-Practice",
   "scripts": {
-    "build:scss": "gulp build:scss",
-    "watch:scss": "gulp watch:scss"
+    "build": "gulp build:scss",
+    "watch": "gulp watch:scss"
   },
   "author": "",
   "license": "ISC",

@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center;
     gap: 2rem;
-    padding: 8rem 0;
+    padding-bottom: 8rem;
     flex-wrap: wrap;
     font-size: 2rem;
 
     @include mq_sp {
         display: block;
-        padding: 3rem 0;
+        padding-bottom: 3rem;
     }
 
     &__li {

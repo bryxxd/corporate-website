@@ -44,11 +44,18 @@ wp_enqueue_script('service-script', get_template_directory_uri() . '/assets/js/v
                             <tr class="p-contact__table__tbody__tr">
                                 <th class="p-contact__table__tbody__tr__th">Message</th>
                                 <td class="p-contact__table__tbody__tr__td">
-                                    <textarea name="number" rows="10" class="p-contact__table__tbody__tr__td__textarea"></textarea>
+                                    <textarea name="message" rows="10" cols="30" class="p-contact__table__tbody__tr__td__textarea"></textarea>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
+                    <div class="p-contact__privacy">
+                        <label for="privacy">
+                            <input class="p-contact__privacy__checkbox" type="checkbox" name="privacy" id="privacy">
+                            <span class="p-contact__privacy__checkmark"></span>
+                            I agree to <a href="#">privacy policy</a> 
+                        </label>
+                    </div>
                     <div class="p-contact__send">
                         <button class="button">Send</button>
                     </div>
