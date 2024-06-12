@@ -165,7 +165,7 @@
             }
 
             &__li {
-                width: 500px !important;
+                width: 350px !important;
                 height: 250px !important;
 
                 @include mq_sp {
@@ -211,7 +211,7 @@
 
                 &__image {
                     width: 100%;
-                    height: 350px;
+                    height: 250px;
 
                     @include mq_sp {
                         height: 22rem;

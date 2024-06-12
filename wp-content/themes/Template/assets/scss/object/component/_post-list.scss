@@ -1,7 +1,6 @@
 .post-list {
     display: flex;
     flex-wrap: wrap;
-    padding: 5rem 0 15rem;
     justify-content: space-between;
     row-gap: 7rem;
 
@@ -31,7 +30,7 @@
 
     &__li {
         list-style-type: none;
-        width: 48%;
+        width: 500px;
 
         @include mq_sp {
             width: 100%;
@@ -58,7 +57,7 @@
     }
 
     &__text {
-        font-size: 1.8rem;
+        font-size: 18px;
 
         &__category {
             background: #eee;
@@ -67,8 +66,8 @@
         }
 
         &__title {
-            margin-top: 1.5rem;
-            font-size: 2.4rem;
+            margin-top: 25px;
+            font-size: 28px;
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
