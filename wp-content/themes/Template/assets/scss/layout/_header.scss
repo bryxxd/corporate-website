@@ -5,7 +5,7 @@
     position: fixed;
     left: 0;
     right: 0;
-    padding: 20px 50px;
+    padding: 25px 50px;
     top: 0;
     z-index: 9999;
     color: $background-color1;
@@ -26,7 +26,7 @@
 
     &__info {
         &__title {
-            font-size: 30px;
+            font-size: 40px;
          
             @include mq_sp {
                 font-size: 2.2rem;

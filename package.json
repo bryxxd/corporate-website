@@ -1,7 +1,7 @@
 {
   "name": "wordpress",
   "version": "1.0.0",
-  "description": "Wordpress-Practice",
+  "description": "Blog Website using Wordpress",
   "scripts": {
     "build": "gulp build:scss",
     "watch": "gulp watch:scss"
