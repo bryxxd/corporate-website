@@ -23,9 +23,9 @@ wp_enqueue_script('contact-script', get_template_directory_uri() . '/assets/js/v
         </figure>
         <div class="container">
             <ul class="p-contact__step">
-                <li class="p-contact__step__list active">Input</li>
+                <li class="p-contact__step__list ">Input</li>
                 <li class="p-contact__step__list">Confirm</li>
-                <li class="p-contact__step__list">Result</li>
+                <li class="p-contact__step__list active">Result</li>
             </ul>
 
             <div class="p-contact__inner">

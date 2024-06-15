@@ -1,0 +1,39 @@
+.mwform-checkbox-field {
+    &-checkbox {
+        opacity: 0;
+        position: absolute;
+    }
+
+    &-text {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            border: 2px solid #000;
+            left: -50px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            ;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 15px;
+            transform: rotate(45deg);
+            border-bottom: 4px solid #000;
+            border-right: 4px solid #000;
+            left: -35px;
+            opacity: 0;
+        }
+    }
+
+    &-checkbox:checked~&-text::after {
+        opacity: 1;
+    }
+}
