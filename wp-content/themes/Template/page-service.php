@@ -18,7 +18,9 @@ wp_enqueue_script('service-script', get_template_directory_uri() . '/assets/js/v
 </div>
 <main>
     <section class="p-service">
-        <img class="p-service__figure" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/service/pc/img-intro.jpg" alt="Service Figure"> 
+        <figure class="c-figure">
+            <img class="c-figure__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/service/pc/img-intro.jpg" alt="Service Figure"> 
+        </figure>
         <div class="p-service__inner container-sp-only">
             <div class="p-service__inner__photos d-pc-only" id="photos">
                 <figure class="p-service__inner__photos__figure ">

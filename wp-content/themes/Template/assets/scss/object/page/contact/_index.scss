@@ -24,9 +24,9 @@
                 font-family: $font-poppins;
 
                 &__th {
-                    font-size: 2.4rem;
+                    font-size: 24px;
                     font-weight: 500;
-                    
+
                     @include mq_sp {
                         font-size: 2rem;
                     }
@@ -34,13 +34,13 @@
 
                 &__td {
                     display: block;
+                    padding-top: 6px;
 
                     &__input {
                         width: 100%;
-                        font-size: 2rem;
-                        padding: 1.5rem 1rem;
-                        border: none;
-                        background: #D8D6D2;
+                        font-size: 22px;
+                        padding: 12px;
+                        border: 1px solid #000;
                         font-family: inherit;
 
                         &:focus {
@@ -50,12 +50,12 @@
 
                     &__textarea {
                         width: 100%;
-                        padding: 1rem;
-                        background: #D8D6D2;
-                        border: none;
-                        font-size: 2rem;
+                        padding: 12px;
+                        min-height: 150px;
+                        font-size: 22px;
                         font-family: inherit;
-                        
+                        border: 1px solid #000;
+
                         &:focus {
                             outline: none;
                         }
@@ -67,9 +67,9 @@
 
     &__privacy {
         text-align: center;
-        font-size: 2rem;
+        font-size: 20px;
         position: relative;
-        width: 30rem;
+        width: 370px;
         margin: 3rem auto 4rem;
 
         &__checkbox {
@@ -79,19 +79,19 @@
 
         &__checkmark {
             position: absolute;
-            width: 3rem;
-            height: 3rem;
+            width: 35px;
+            height: 35px;
             border: 2px solid #d8d6d2;
-            left: 0;
+            left: 20px;
             top: 0;
             bottom: 0;
             margin: auto;
-    
+
             &::before {
                 content: "";
                 position: absolute;
-                width: 1.6rem;
-                height: 1.6rem;
+                width: 20px;
+                height: 20px;
                 background: #d8d6d2;
                 inset: 0;
                 margin: auto;
@@ -99,7 +99,7 @@
             }
         }
 
-        &__checkbox:checked ~ &__checkmark::before {
+        &__checkbox:checked~&__checkmark::before {
             display: block;
         }
 

@@ -1,0 +1,13 @@
+.c-figure {
+    margin: 0;
+    
+    &__img {
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+
+        @include mq_sp {
+            height: 30rem;
+        }
+    }
+}

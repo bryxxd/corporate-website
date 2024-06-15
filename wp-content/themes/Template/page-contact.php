@@ -18,6 +18,9 @@ wp_enqueue_script('service-script', get_template_directory_uri() . '/assets/js/v
 </div>
 <main>
     <section class="p-contact">
+        <figure class="c-figure">
+            <img class="c-figure__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/contact/pc/img-figure.jpg" width="100%" height="700px" alt="Service Figure">
+        </figure>
         <div class="container">
             <div class="p-contact__inner">
                 <form action="#" method="POST">
@@ -44,7 +47,7 @@ wp_enqueue_script('service-script', get_template_directory_uri() . '/assets/js/v
                             <tr class="p-contact__table__tbody__tr">
                                 <th class="p-contact__table__tbody__tr__th">Message</th>
                                 <td class="p-contact__table__tbody__tr__td">
-                                    <textarea name="message" rows="10" cols="30" class="p-contact__table__tbody__tr__td__textarea"></textarea>
+                                    <textarea name="message" class="p-contact__table__tbody__tr__td__textarea"></textarea>
                                 </td>
                             </tr>
                         </tbody>
