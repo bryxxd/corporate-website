@@ -9,7 +9,8 @@
     font-size: 100px;
     position: relative;
     transition: 6s width;
-
+    margin-top: 150px;
+    
     @include mq_sp {
         font-size: 4rem;
         padding: 10rem 0;

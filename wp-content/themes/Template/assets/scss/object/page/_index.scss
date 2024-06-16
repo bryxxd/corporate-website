@@ -226,6 +226,10 @@
                     -webkit-line-clamp: 2;
                     -webkit-box-orient: vertical;
                     overflow: hidden;
+
+                    @include mq_sp {
+                        font-size: 2rem;
+                    }
                 }
 
                 &__category {
@@ -235,9 +239,9 @@
                     margin: 2rem 0;
 
                     &__list {
-                        font-size: 16px;
+                        font-size: 1.2rem;
                         background: $background-color2;
-                        padding: 10px 25px;
+                        padding: 1rem;
                         list-style-type: none;
                     }
                 }
