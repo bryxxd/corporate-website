@@ -21,6 +21,8 @@
 
         @include mq_sp {
             padding: 1rem 0.5rem;
+            gap: 3rem;
+            margin: 3rem 0;
         }
 
 
@@ -41,8 +43,7 @@
                 margin: auto 1rem;
 
                 @include mq_sp {
-                    margin: auto 0.2rem;
-                    font-size: 1rem;
+                    font-size: 1.6rem;
                 }
             }
 

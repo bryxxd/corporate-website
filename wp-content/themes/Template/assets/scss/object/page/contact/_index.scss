@@ -1,5 +1,4 @@
 .p-contact {
-
     @include mq_sp {
         margin-top: 3rem;
     }
@@ -16,15 +15,34 @@
 
     &__step {
         display: flex;
-        justify-content: center;
         align-items: center;
-        margin: 100px 0;
-        gap: 80px;
+        position: relative;
+        justify-content: space-between;
+        width: 700px;
+        margin: 100px auto;
+
+        @include mq_sp {
+            width: 100%;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            left: 0;
+            border: 1px solid #000;
+            z-index: -1;
+
+            @include mq_sp {
+                width: 99%;
+            }
+        }
 
         &__list {
             list-style-type: none;
             border: 2px solid #000;
             color: #000;
+            background-color: #fff;
             width: 150px;
             height: 150px;
             font-size: 18px;
@@ -33,22 +51,19 @@
             align-items: center;
             border-radius: 50%;
             position: relative;
+            z-index: 2;
+
+            @include mq_sp {
+                width: 8rem;
+                height: 8rem;
+                flex-shrink: 0;
+                font-size: 1.4rem;
+            }
 
             &.active {
                 font-weight: bold;
                 background-color: #000;
                 color: #fff;
-            }
-
-            &:nth-child(1),
-            &:nth-child(2) {
-                &::after {
-                    content: "";
-                    position: absolute;
-                    width: 80px;
-                    border: 1px solid #000;
-                    right: -83px;
-                }
             }
         }
     }
@@ -57,12 +72,20 @@
         font-size: 50px;
         text-align: center;
         font-weight: 600;
+
+        @include mq_sp {
+            font-size: 4rem;
+        }
     }
 
     &__message {
         font-size: 20px;
         margin: 15px 0;
         text-align: center;
+
+        @include mq_sp {
+            font-size: 1.6rem;
+        }
     }
 
     &__table {
@@ -76,7 +99,7 @@
                 font-family: $font-poppins;
 
                 &__th {
-                    font-size: 24px;
+                    font-size: 22px;
                     font-weight: 500;
 
                     .required {
@@ -91,7 +114,7 @@
                     }
 
                     @include mq_sp {
-                        font-size: 2rem;
+                        font-size: 1.6rem;
                     }
                 }
 
@@ -101,13 +124,22 @@
 
                     &__input {
                         width: 100%;
-                        font-size: 22px;
+                        font-size: 20px;
                         padding: 12px;
                         border: 1px solid #000;
                         font-family: inherit;
 
-                        &:focus {
-                            outline: none;
+                        @include mq_sp {
+                            font-size: 1.6rem;
+                            padding: 1rem;
+                        }
+
+                        &::placeholder {
+                            font-size: 20px;
+
+                            @include mq_sp {
+                                font-size: 1.6rem;
+                            }
                         }
                     }
 
@@ -118,6 +150,19 @@
                         font-size: 22px;
                         font-family: inherit;
                         border: 1px solid #000;
+
+                        @include mq_sp {
+                            font-size: 1.6rem;
+                            padding: 1rem;
+                        }
+
+                        &::placeholder {
+                            font-size: 20px;
+
+                            @include mq_sp {
+                                font-size: 1.6rem;
+                            }
+                        }
 
                         &:focus {
                             outline: none;
@@ -130,6 +175,10 @@
                         border: 1px solid #000;
                         padding: 30px 25px;
                         scrollbar-color: black white;
+
+                        @include mq_sp {
+                            font-size: 1.6rem;
+                        }
                     }
                 }
             }
@@ -142,11 +191,17 @@
         position: relative;
         width: 370px;
         margin: 0 auto 4rem;
+
+        @include mq_sp {
+            width: 100%;
+            padding-left: 3rem; 
+            font-size: 1.6rem;
+        }
     }
 
     &__send {
         text-align: center;
-        
+
         &.is-confirm {
             display: flex;
             justify-content: center;

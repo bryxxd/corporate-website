@@ -29,8 +29,6 @@ wp_enqueue_script('contact-script', get_template_directory_uri() . '/assets/js/v
             </ul>
 
             <div class="p-contact__inner">
-                <p class="p-contact__team">Contact me</p>
-                <p class="p-contact__message">I am here to answer your question.<br> Please fill out the form, and I'll be in touch as soon as possible.</p>
                 <?php the_content() ?>
             </div>
         </div>

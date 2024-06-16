@@ -1,6 +1,11 @@
 html {
     font-family: $font-default;
     scroll-behavior: smooth;
+
+    @include mq_sp {
+        font-size: 3vw;
+
+    }
 }
 //all
 * {

@@ -83,11 +83,19 @@
 
         &__heading {
             font-size: 50px;
-            margin-bottom: 50px;
+            margin-bottom: 3rem;
+
+            @include mq_sp {
+                font-size: 3rem;
+            }
         }
 
         &__context {
             font-size: 20px;
+
+            @include mq_sp {
+                font-size: 1.6rem;
+            }
 
             &__img {
                 float: right;
