@@ -112,7 +112,7 @@
                     margin-top: 25rem;
 
                     @include mq_sp {
-                        padding: 0 0 15rem;
+                        padding: 0 0 5rem;
                         margin-top: 6rem;
                         text-align: center;
                     }
@@ -146,7 +146,7 @@
         margin: 400px 0;
 
         @include mq_sp {
-            margin: 0;
+            margin: 15rem 0 0;
         }
 
         &__slider {
@@ -203,7 +203,7 @@
             margin-top: 10rem;
 
             @include mq_sp {
-                margin-top: 3rem;
+                margin: 3rem 0;
             }
 
             &__anchor {

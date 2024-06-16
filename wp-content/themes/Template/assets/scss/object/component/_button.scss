@@ -26,6 +26,10 @@
     &.is-big {
         padding: 15px 60px;
         font-size: 30px;
+
+        @include mq_sp {
+            font-size: 1.6rem;
+        }
     }
 
     @include mq_pc {
