@@ -1,11 +1,40 @@
-<h1>Wordpress Template</h1>
+# Wordpress Project
 
-<h2>Required Package for watching SCSS file changes</h2>
+Using the wordpress template I've created.
+
+
+Just showcasing my web dev skills
+
+## Installation
+
 Install Package
-<code>npm install</code><br>
+
+```bash
+npm install
+```
+
 Install Gulp as dependency
-<code>npm install --save-dev gulp</code><br>
+
+```bash
+npm install --save-dev gulp
+```
+
 Install the required gulp plugin
-<code>npm install --save-dev gulp-sass gulp-clean-css</code><br>
-Watch SCSS file
-<code>npm run watch:scss</code>
+
+```bash
+npm install --save-dev gulp-sass gulp-clean-css
+```
+Build SCSS file 
+
+```bash
+npm run build
+```
+
+Watch SCSS file 
+
+```bash
+npm run watch
+```
+
+
+
