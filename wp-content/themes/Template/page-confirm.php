@@ -17,7 +17,7 @@ wp_enqueue_script('contact-script', get_template_directory_uri() . '/assets/js/v
     </div>
 </div>
 <main>
-    <section class="p-contact">
+    <section class="p-contact is-confirm">
         <figure class="c-figure">
             <img class="c-figure__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/contact/pc/img-figure.jpg" width="100%" height="700px" alt="Service Figure">
         </figure>

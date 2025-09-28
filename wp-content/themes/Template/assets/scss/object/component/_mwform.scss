@@ -6,6 +6,8 @@
 
     &-text {
         position: relative;
+        color: #fff;
+        cursor: pointer;
 
         &::before {
             content: "";
@@ -13,7 +15,7 @@
             width: 25px;
             height: 25px;
             border: 2px solid #000;
-            left: -45px;
+            left: 0;
             top: 0;
             bottom: 0;
             margin: auto;
@@ -21,7 +23,6 @@
             @include mq_sp {
                 width: 2rem;
                 height: 2rem;
-                left: -3.5rem;
             }
         }
 
@@ -33,13 +34,13 @@
             transform: rotate(45deg);
             border-bottom: 0.2rem solid #000;
             border-right: 0.2rem solid #000;
-            left: -35px;
+            left: 10px;
             opacity: 0;
 
             @include mq_sp {
                 width: 0.6rem;
                 height: 1.2rem;
-                left: -2.8rem;
+                left: 0.8rem;
             }
         }
     }
