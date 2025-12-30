@@ -102,7 +102,6 @@
                 margin-left: 2rem;
                 max-width: 500px;
 
-
                 @include mq_sp {
                     float: none;
                     max-width: 100%;
@@ -110,13 +109,17 @@
                     display: block;
                 }
             }
-
         }
 
         &__figure {
             &__img {
                 width: 100%;
             }
+        }
+
+        &__back {
+            text-align: center;
+            margin-top: 50px;
         }
     }
 }

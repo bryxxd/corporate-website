@@ -4,13 +4,13 @@ wp_enqueue_script('service-script', get_template_directory_uri() . '/assets/js/v
 
 ?>
 <div class="container">
-    <div class="hero">
-        <h1 class="hero__heading">Service</h1>
-        <ul class="hero__topic-path">
-            <li class="hero__topic-path__li">
+    <div class="c-hero">
+        <h1 class="c-hero__heading">Service</h1>
+        <ul class="c-hero__topic-path">
+            <li class="c-hero__topic-path__li">
                 <a href="<?php echo home_url('/') ?>">Home</a>
             </li>
-            <li class="hero__topic-path__li">
+            <li class="c-hero__topic-path__li">
                 <span>Service</span>
             </li>
         </ul>
@@ -52,7 +52,7 @@ wp_enqueue_script('service-script', get_template_directory_uri() . '/assets/js/v
                         inventore quibusdam reiciendis illo optio quia laboriosam aut deleniti vero, quaerat
                         architecto dolor magni possimus? Minima, optio repudiandae.
                     </p>
-                    <a class="button" href="<?php echo home_url('/service/service1') ?>">See more</a>
+                    <a class="c-button" href="<?php echo home_url('/service/service1') ?>">See more</a>
                 </div>
                 <div class="p-service__inner__details__item  p-service__inner__details__item__target">
                     <h3 class="p-service__inner__details__item__title">Lorem ipsum</h3>
@@ -66,7 +66,7 @@ wp_enqueue_script('service-script', get_template_directory_uri() . '/assets/js/v
                         inventore quibusdam reiciendis illo optio quia laboriosam aut deleniti vero, quaerat
                         architecto dolor magni possimus? Minima, optio repudiandae.
                     </p>
-                    <a class="button" href="<?php echo home_url('/service/service2') ?>">See more</a>
+                    <a class="c-button" href="<?php echo home_url('/service/service2') ?>">See more</a>
                 </div>
                 <div class="p-service__inner__details__item  p-service__inner__details__item__target">
                     <h3 class="p-service__inner__details__item__title">Lorem ipsum</h3>
@@ -80,7 +80,7 @@ wp_enqueue_script('service-script', get_template_directory_uri() . '/assets/js/v
                         inventore quibusdam reiciendis illo optio quia laboriosam aut deleniti vero, quaerat
                         architecto dolor magni possimus? Minima, optio repudiandae.
                     </p>
-                    <a class="button" href="<?php echo home_url('/service/service3') ?>">See more</a>
+                    <a class="c-button" href="<?php echo home_url('/service/service3') ?>">See more</a>
                 </div>
             </div>
         </div>

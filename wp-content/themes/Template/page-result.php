@@ -4,13 +4,13 @@ wp_enqueue_script('contact-script', get_template_directory_uri() . '/assets/js/v
 
 ?>
 <div class="container">
-    <div class="hero">
-        <h1 class="hero__heading">Contact</h1>
-        <ul class="hero__topic-path">
-            <li class="hero__topic-path__li">
+    <div class="c-hero">
+        <h1 class="c-hero__heading">Contact</h1>
+        <ul class="c-hero__topic-path">
+            <li class="c-hero__topic-path__li">
                 <a href="<?php echo home_url('/') ?>">Home</a>
             </li>
-            <li class="hero__topic-path__li">
+            <li class="c-hero__topic-path__li">
                 <span>Contact</span>
             </li>
         </ul>

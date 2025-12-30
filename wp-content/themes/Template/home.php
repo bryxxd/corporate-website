@@ -38,8 +38,8 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
         </section>
 
         <section class="p-index__service container-sp-only">
-            <div class="heading">
-                <h2 class="heading__h2">Service</h2>
+            <div class="c-heading">
+                <h2 class="c-heading__h2">Service</h2>
             </div>
             <div class="p-index__service__inner">
                 <div class="p-index__service__inner__photos d-pc-only" id="photos">
@@ -72,7 +72,7 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
                             inventore quibusdam reiciendis illo optio quia laboriosam aut deleniti vero, quaerat
                             architecto dolor magni possimus? Minima, optio repudiandae.
                         </p>
-                        <a class="button" href="#">See more</a>
+                        <a class="c-button" href="#">See more</a>
                     </div>
                     <div class="p-index__service__inner__details__item  p-index__service__inner__details__item__target">
                         <h3 class="p-index__service__inner__details__item__title">Lorem ipsum</h3>
@@ -86,7 +86,7 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
                             inventore quibusdam reiciendis illo optio quia laboriosam aut deleniti vero, quaerat
                             architecto dolor magni possimus? Minima, optio repudiandae.
                         </p>
-                        <a class="button" href="#">See more</a>
+                        <a class="c-button" href="#">See more</a>
                     </div>
                     <div class="p-index__service__inner__details__item  p-index__service__inner__details__item__target">
                         <h3 class="p-index__service__inner__details__item__title">Lorem ipsum</h3>
@@ -100,15 +100,15 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
                             inventore quibusdam reiciendis illo optio quia laboriosam aut deleniti vero, quaerat
                             architecto dolor magni possimus? Minima, optio repudiandae.
                         </p>
-                        <a class="button" href="#">See more</a>
+                        <a class="c-button" href="#">See more</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="p-index__gallery">
-            <div class="heading">
-                <h2 class="heading__h2">Gallery</h2>
+            <div class="c-heading">
+                <h2 class="c-heading__h2">Gallery</h2>
             </div>
 
             <div class="splide p-index__gallery__slider  p-index__gallery__slider--left" role="group"
@@ -179,8 +179,8 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
         </section>
 
         <section class="p-index__blog">
-            <div class="heading">
-                <h2 class="heading__h2">Blog</h2>
+            <div class="c-heading">
+                <h2 class="c-heading__h2">Blog</h2>
             </div>
 
             <div class="splide p-index__blog__post" role="group" aria-label="Blog Splide">
@@ -244,7 +244,7 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
                 </div>
             </div>
             <div class="container p-index__blog__post__more">
-                <a class="button is-big" href="<?php echo home_url('/blog/') ?>">See more</a>
+                <a class="c-button" href="<?php echo home_url('/blog/') ?>">See more</a>
             </div>
         </section>
     </div>

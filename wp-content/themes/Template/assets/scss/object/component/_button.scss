@@ -1,4 +1,4 @@
-.button {
+.c-button {
     text-decoration: none;
     background-color: $background-color1;
     color: $text-color2;
@@ -9,6 +9,11 @@
     position: relative;
     border: 1px solid #000;
     cursor: pointer;
+
+    @include mq_sp {
+        padding: 1rem 5rem;
+        font-size: 1.6rem;
+    }
     
     &::after {
         content: "";

@@ -2,16 +2,16 @@
 get_header();
 ?>
 <div class="container">
-    <div class="hero">
-        <h1 class="hero__heading">Service 3</h1>
-        <ul class="hero__topic-path">
-            <li class="hero__topic-path__li">
+    <div class="c-hero">
+        <h1 class="c-hero__heading">Service 3</h1>
+        <ul class="c-hero__topic-path">
+            <li class="c-hero__topic-path__li">
                 <a href="<?php echo home_url('/') ?>">Home</a>
             </li>
-            <li class="hero__topic-path__li">
+            <li class="c-hero__topic-path__li">
                 <a href="<?php echo home_url('/service') ?>">Service</a>
             </li>
-            <li class="hero__topic-path__li">
+            <li class="c-hero__topic-path__li">
                 <span>Service 3</span>
             </li>
         </ul>
@@ -42,6 +42,9 @@ get_header();
                     <br>
                     <br>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+                <div class="p-service__content__back">
+                    <a class="c-button" href="<?php echo home_url('/service/') ?>">Back</a>
                 </div>
             </div>
         </div>

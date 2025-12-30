@@ -9,4 +9,3 @@ npm install --save-dev gulp-sass gulp-clean-css
 npm run watch:scss
 
 
-投稿アーカイブのURL変更

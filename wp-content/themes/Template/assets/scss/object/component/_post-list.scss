@@ -1,4 +1,4 @@
-.post-list {
+.c-post-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -43,7 +43,7 @@
         &__image {
             width: 100%;
             height: 371px;
-            object-fit: cover;
+            object-fit: contain;
 
             @include mq_sp {
                 height: 25rem;
