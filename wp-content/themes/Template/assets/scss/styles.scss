@@ -16,6 +16,7 @@
 // - Component
 @import 'object/component/button';
 @import 'object/component/contact-banner';
+@import 'object/component/category-checkbox';
 @import 'object/component/figure';
 @import 'object/component/post-category';
 @import 'object/component/hero';
@@ -32,6 +33,8 @@
 @import 'object/page/contact/index';
 @import 'object/page/blog/index';
 @import 'object/page/blog/detail';
+@import 'object/page/works/index';
+@import 'object/page/works/detail';
 
 // - Utility
 @import 'object/utility/button';

@@ -10,14 +10,9 @@
                 <a href="<?php echo home_url('/blog') ?>">Blog</a>
             </li>
             <li class="c-hero__topic-path__li title">
-                <?php
-                $category = get_the_category();
-                $cat_name = $category[0]->cat_name;
-                ?>
-                <span class="c-hero__topic-path__li__title"><?php echo $cat_name ?></span>
+                <span class="c-hero__topic-path__li__title"><?php the_title() ?></span>
             </li>
         </ul>
-        <p class="c-hero__post-date">Date : <?php the_time('d/m/Y') ?></p>
     </div>
 </div>
 
@@ -40,14 +35,14 @@
                     <div class="c-wysiwyg">
                         <?php the_content() ?>
                     </div>
-                </div>
-            <?php endwhile;
+                <?php endwhile;
             endif ?>
-
+            <div class="p-blog-detail__back">
+                <a class="c-button" href="<?php echo home_url('/blog/') ?>">Back</a>
+            </div>
+        </div>
     </div>
-    </div>
-
-    <?php get_template_part('./template/contact-banner') ?>
+        <?php get_template_part('./template/contact-banner') ?>
 
 </main>
 

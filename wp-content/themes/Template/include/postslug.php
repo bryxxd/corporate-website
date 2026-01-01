@@ -1,36 +1,30 @@
 <?php 
 
-// rewrite post slug
-function post_has_archive($args, $post_type)
-{
-    if ('post' == $post_type) {
-        $args['rewrite'] = true;
-        $args['has_archive'] = 'blog'; //Any slug name ←Enable archive page
-        // $args [ 'label' ] = 'Blog'; //Displayed in place of "Post" in the left navigation of the management screen
+// Change post slug 'blog'
+add_filter('register_post_type_args', function ($args, $post_type) {
+    if ('post' === $post_type) {
+        $args['rewrite'] = [
+            'slug' => 'blog', 
+            'with_front' => false,
+        ];
+        $args['has_archive'] = 'blog';
     }
     return $args;
-}
-add_filter('register_post_type_args', 'post_has_archive', 10, 2);
+}, 10, 2);
+
 add_filter('post_type_archive_link', function ($link, $post_type) {
     if ('post' === $post_type) {
         $post_type_object = get_post_type_object('post');
         $slug = $post_type_object->has_archive;
-        $link = get_home_url(null, '/' . $slug . '/');
+        $link = get_home_url(null, '/333' . $slug . '/');
     }
     return $link;
 }, 10, 2);
+
 function add_article_post_permalink($permalink)
 {
     $permalink = '/blog' . $permalink;
     return $permalink;
 }
+
 add_filter('pre_post_link', 'add_article_post_permalink');
-function add_article_post_rewrite_rules($post_rewrite)
-{
-    $return_rule = array();
-    foreach ($post_rewrite as $regex => $rewrite) {
-        $return_rule['blog/' . $regex] = $rewrite;
-    }
-    return $return_rule;
-}
-add_filter('post_rewrite_rules', 'add_article_post_rewrite_rules');

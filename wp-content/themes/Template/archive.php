@@ -52,7 +52,7 @@
                             <?php endif; ?>
                         </div>
                         <div class="c-post-list__text">
-                            <span class="c-post-list__text__date"><?php the_time('Y.m.d'); ?></span>
+                            <span class="c-post-list__text__date"><?php the_time('m/d/Y'); ?></span>
 
                             <?php foreach ($categories as $category): ?>
                                 <span class="c-post-list__text__category"><?php echo esc_html($category->name); ?></span>

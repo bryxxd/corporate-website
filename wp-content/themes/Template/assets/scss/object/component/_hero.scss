@@ -53,7 +53,13 @@
 
             & span {
                 font-weight: bold;
-                text-decoration: underline;
+
+                @include mq_sp {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
             }
 
             &__title {
