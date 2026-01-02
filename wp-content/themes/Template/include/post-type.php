@@ -10,6 +10,7 @@ function custom_post_type_works()
         'public' => true,
         'has_archive' => true,
         'show_in_rest' => true,
+        'menu_position' => 5,
         'supports' => array('title', 'editor', 'thumbnail')
         
     );
