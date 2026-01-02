@@ -22,7 +22,7 @@
                         <div class="c-category-checkbox__form__categories">
                             <?php
                             $categories = get_terms([
-                                'taxonomy' => 'works_category',
+                                'taxonomy' => 'work_category',
                                 'hide_empty' => false,
                             ]);
                             foreach ($categories as $category):
@@ -48,7 +48,7 @@
                 <?php
                 while (have_posts()):
                     the_post();
-                    $categories = get_the_terms(get_the_ID(), 'works_category') ?? [];
+                    $categories = get_the_terms(get_the_ID(), 'work_category') ?? [];
                 ?>
                     <li class="c-post-list__li p-works__post-list__li">
                         <a href="<?php the_permalink(); ?>" class="c-post-list__item">
@@ -61,13 +61,14 @@
                                         alt="Image Placeholder">
                                 <?php endif; ?>
                             </div>
+                            <?php if ($categories): ?>
                             <div class="p-works__post-list__category">
                                 <?php foreach ($categories as $category): ?>
                                     <span
                                         class="p-works__post-list__category__item"><?php echo esc_html($category->name); ?></span>
                                 <?php endforeach; ?>
-
                             </div>
+                            <?php endif; ?>
                             <div class="c-post-list__text__title"><?php the_title(); ?></div>
 
                         </a>

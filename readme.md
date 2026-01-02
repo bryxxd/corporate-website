@@ -1,40 +1,45 @@
-# Wordpress Project
+# WordPress Project
 
-Using the wordpress template I've created.
+A custom WordPress theme I built to showcase my WordPress development skills.
 
+This project highlights my experience with theme development, including working with custom post types and taxonomies.
 
-Just showcasing my web dev skills
+## Notes
+
+- This is a portfolio/demonstration project with dummy content
+
+## Features
+
+- Custom WordPress theme development
+- Custom post types and taxonomies
+- Category filtering functionality
+- Gulp for SASS compilation
 
 ## Installation
 
-Install Package
-
+### Install Package
 ```bash
 npm install
 ```
 
-Install Gulp as dependency
-
+### Install Gulp as dependency
 ```bash
 npm install --save-dev gulp
 ```
 
-Install the required gulp plugin
-
+### Install the required gulp plugins
 ```bash
 npm install --save-dev gulp-sass gulp-clean-css
 ```
-Build SCSS file 
 
+### Build SCSS file 
 ```bash
 npm run build
 ```
 
-Watch SCSS file 
-
+### Watch SCSS file 
 ```bash
 npm run watch
 ```
-
 
 

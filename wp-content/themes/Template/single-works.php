@@ -5,14 +5,15 @@
         <div class="c-hero">
             <h1 class="c-hero__heading"><?php the_title() ?></h1>
             <?php
-            $categories = get_the_terms(get_the_ID(), 'works_category') ?? [];
+            $categories = get_the_terms(get_the_ID(), 'work_category') ?? [];
             ?>
-
+            <?php if ($categories): ?>
             <ul class="p-works-detail__category">
                 <?php foreach ($categories as $category): ?>
                     <li class="p-works-detail__category__item"><?php echo esc_html($category->name); ?></li>
                 <?php endforeach; ?>
             </ul>
+            <?php endif; ?>
         </div>
     </div>
 
