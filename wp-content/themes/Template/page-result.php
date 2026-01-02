@@ -19,7 +19,9 @@ wp_enqueue_script('contact-script', get_template_directory_uri() . '/assets/js/v
 <main>
     <section class="p-contact">
         <figure class="c-figure">
-            <img class="c-figure__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/contact/pc/img-figure.jpg" width="100%" height="700px" alt="Service Figure">
+            <img class="c-figure__img"
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/views/contact/pc/img-figure.jpg"
+                width="100%" height="700px" alt="Service Figure">
         </figure>
         <div class="container">
             <ul class="p-contact__step">
@@ -29,7 +31,16 @@ wp_enqueue_script('contact-script', get_template_directory_uri() . '/assets/js/v
             </ul>
 
             <div class="p-contact__inner">
-                <?php the_content() ?>
+                <div class="p-contact__result">
+                    <h2 class="p-contact__result__heading">Your inquiry has been successfully submitted.</h2>
+                    <p class="p-contact__result__message">Thank you for contacting us. We have received your inquiry and
+                        will get back
+                        to you as soon as possible.</p>
+                    <div class="p-contact__result__button">
+                        <a href="<?php echo home_url('/') ?>" class="c-button">Return to Home</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
