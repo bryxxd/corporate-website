@@ -27,7 +27,7 @@
                             ]);
                             foreach ($categories as $category):
                                 $checked = isset($_GET['works_category']) && in_array($category->slug, $_GET['works_category']) ? 'checked' : '';
-                                ?>
+                            ?>
                                 <label class="c-category-checkbox__label">
                                     <input class="c-category-checkbox__label__input" type="checkbox" name="works_category[]"
                                         value="<?php echo esc_attr($category->slug); ?>" <?php echo $checked; ?>>
@@ -49,7 +49,7 @@
                 while (have_posts()):
                     the_post();
                     $categories = get_the_terms(get_the_ID(), 'works_category') ?? [];
-                    ?>
+                ?>
                     <li class="c-post-list__li p-works__post-list__li">
                         <a href="<?php the_permalink(); ?>" class="c-post-list__item">
                             <div class="c-post-list__thumb">
@@ -74,7 +74,9 @@
                     </li>
                 <?php endwhile; ?>
             </ul>
-            <?php pagination() ?>
+            <div class="c-pagination">
+                <?php if (function_exists('wp_pagenavi')) wp_pagenavi(); ?>
+            </div>
         </div>
     </div>
     <?php get_template_part('./template/contact-banner') ?>

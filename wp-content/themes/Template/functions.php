@@ -9,5 +9,8 @@ require_once(__DIR__ . '/include/include.php');
 // Feature
 require_once(__DIR__ . '/include/init.php');
 
+// Query
+require_once(__DIR__ . '/include/query.php');
+
 
 

@@ -1,7 +1,7 @@
 <footer class="footer">
 
     <div class="footer__copyright">
-        <p class="footer__copyright__p">&copy;<?php echo esc_html(date('Y')); ?> Blog Website | Develop by Bryxx</p>
+        <p class="footer__copyright__p">&copy;<?php echo esc_html(date('Y')); ?> Corporate Website | Develop by Bryxx</p>
     </div>
 </footer>
 

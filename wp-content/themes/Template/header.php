@@ -43,6 +43,9 @@
                 <a href="<?php echo home_url('/service/') ?>" class="nav__ul__li__a">Service</a>
             </li>
             <li class="nav__ul__li">
+                <a href="<?php echo home_url('/works/') ?>" class="nav__ul__li__a">Works</a>
+            </li>
+            <li class="nav__ul__li">
                 <a href="<?php echo home_url('/contact/') ?>" class="nav__ul__li__a <?php if (is_front_page()): ?>is-contact<?php else : ?>is-contact is-scrolled<?php endif ?>">Contact</a>
             </li>
         </ul>

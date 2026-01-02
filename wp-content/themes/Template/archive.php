@@ -24,7 +24,7 @@
             <?php
             $categories = get_categories(['hide_empty' => true]);
             foreach ($categories as $category):
-                ?>
+            ?>
                 <li class="c-post-category__li">
                     <a href="<?php echo esc_url(get_category_link($category)) ?>"
                         class="c-post-category__anchor <?php echo is_category($category->term_id) ? 'is-active' : '' ?>">
@@ -39,7 +39,7 @@
             while (have_posts()):
                 the_post();
                 $categories = get_the_category() ?? [];
-                ?>
+            ?>
                 <li class="c-post-list__li">
                     <a href="<?php the_permalink(); ?>" class="c-post-list__item">
                         <div class="c-post-list__thumb">
@@ -64,7 +64,9 @@
                 </li>
             <?php endwhile; ?>
         </ul>
-        <?php pagination() ?>
+        <div class="c-pagination">
+            <?php if (function_exists('wp_pagenavi')) wp_pagenavi(); ?>
+        </div>
     </div>
 
     <?php get_template_part('./template/contact-banner') ?>
