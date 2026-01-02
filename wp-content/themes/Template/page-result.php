@@ -32,13 +32,7 @@ wp_enqueue_script('contact-script', get_template_directory_uri() . '/assets/js/v
 
             <div class="p-contact__inner">
                 <div class="p-contact__result">
-                    <h2 class="p-contact__result__heading">Your inquiry has been successfully submitted.</h2>
-                    <p class="p-contact__result__message">Thank you for contacting us. We have received your inquiry and
-                        will get back
-                        to you as soon as possible.</p>
-                    <div class="p-contact__result__button">
-                        <a href="<?php echo home_url('/') ?>" class="c-button">Return to Home</a>
-                    </div>
+                    <?php the_content() ?>
                 </div>
 
             </div>
