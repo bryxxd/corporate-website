@@ -4,6 +4,9 @@ A custom WordPress theme I built to showcase my WordPress development skills.
 
 This project highlights my experience with theme development, including working with custom post types and taxonomies.
 
+## Test site
+https://snow-shrew-794347.hostingersite.com/
+
 ## Notes
 
 - This is a portfolio/demonstration project with dummy content
