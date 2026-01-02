@@ -77,6 +77,10 @@
         speed: 1.5,
       },
       breakpoints: {
+                750: {
+          gap: '2rem',
+          fixedWidth: '20rem',
+        },
         751: {
           autoScroll: {
             pauseOnHover: false,
@@ -107,6 +111,10 @@
         speed: 1.5,
       },
       breakpoints: {
+        750: {
+          gap: '2rem',
+          fixedWidth: '20rem',
+        },
         751: {
           autoScroll: {
             pauseOnHover: false,
