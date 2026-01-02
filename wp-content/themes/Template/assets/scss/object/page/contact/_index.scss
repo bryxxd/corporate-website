@@ -248,4 +248,35 @@
             gap: 10px;
         }
     }
+
+    &__result {
+        &__heading {
+            font-size: 26px;
+            text-align: center;
+            font-weight: 600;
+
+            @include mq_sp {
+                font-size: 2rem;
+            }
+        }
+
+        &__message {
+            font-size: 16px;
+            margin: 15px 0;
+            text-align: center;
+
+            @include mq_sp {
+                font-size: 1.3rem;
+            }
+        }
+
+        &__button {
+            text-align: center;
+            margin-top: 60px;
+
+            @include mq_sp {
+                margin-top: 4rem;
+            }
+        }
+    }
 }
