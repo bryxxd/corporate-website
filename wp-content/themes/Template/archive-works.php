@@ -26,10 +26,10 @@
                                 'hide_empty' => false,
                             ]);
                             foreach ($categories as $category):
-                                $checked = isset($_GET['works_category']) && in_array($category->slug, $_GET['works_category']) ? 'checked' : '';
+                                $checked = isset($_GET['work_category']) && in_array($category->slug, $_GET['work_category']) ? 'checked' : '';
                             ?>
                                 <label class="c-category-checkbox__label">
-                                    <input class="c-category-checkbox__label__input" type="checkbox" name="works_category[]"
+                                    <input class="c-category-checkbox__label__input" type="checkbox" name="work_category[]"
                                         value="<?php echo esc_attr($category->slug); ?>" <?php echo $checked; ?>>
                                     <span
                                         class="c-category-checkbox__label__text"><?php echo esc_html($category->name); ?></span>
