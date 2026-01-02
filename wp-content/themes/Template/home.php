@@ -72,7 +72,7 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
                             inventore quibusdam reiciendis illo optio quia laboriosam aut deleniti vero, quaerat
                             architecto dolor magni possimus? Minima, optio repudiandae.
                         </p>
-                        <a class="c-button" href="#">See more</a>
+                        <a class="c-button" href="<?php echo home_url('/service/service1') ?>">See more</a>
                     </div>
                     <div class="p-index__service__inner__details__item  p-index__service__inner__details__item__target">
                         <h3 class="p-index__service__inner__details__item__title">Lorem ipsum</h3>
@@ -86,7 +86,7 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
                             inventore quibusdam reiciendis illo optio quia laboriosam aut deleniti vero, quaerat
                             architecto dolor magni possimus? Minima, optio repudiandae.
                         </p>
-                        <a class="c-button" href="#">See more</a>
+                        <a class="c-button" href="<?php echo home_url('/service/service2') ?>">See more</a>
                     </div>
                     <div class="p-index__service__inner__details__item  p-index__service__inner__details__item__target">
                         <h3 class="p-index__service__inner__details__item__title">Lorem ipsum</h3>
@@ -100,7 +100,7 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
                             inventore quibusdam reiciendis illo optio quia laboriosam aut deleniti vero, quaerat
                             architecto dolor magni possimus? Minima, optio repudiandae.
                         </p>
-                        <a class="c-button" href="#">See more</a>
+                        <a class="c-button" href="<?php echo home_url('/service/service3') ?>">See more</a>
                     </div>
                 </div>
             </div>

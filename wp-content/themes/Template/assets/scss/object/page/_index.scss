@@ -165,14 +165,6 @@
             }
 
             &__li {
-                width: 350px !important;
-                height: 250px !important;
-
-                @include mq_sp {
-                    width: 30rem !important;
-                    height: 21rem !important;
-                }
-
                 &__img {
                     width: 100%;
                     height: 100%;
