@@ -1,12 +1,26 @@
 html {
     font-family: $font-default;
-}
+    scroll-behavior: smooth;
 
-// Body
-body {
+    @include mq_sp {
+        font-size: 3vw;
+
+    }
+}
+//all
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+// Body
+body {
+    min-width: $pc-min-width;
+    position: relative;
+    
+    @include mq_sp {
+        min-width: auto;
+    }
 }
 
 // Heading
@@ -38,12 +52,6 @@ p {
 ul {
     margin: 0;
     padding: 0;
-    list-style: none;
-
-    // List li
-    li {
-        list-style: none;
-    }
 
     // List ol
     ol {
@@ -58,4 +66,8 @@ img {
     @include mq_sp {
         max-width: 100%;
     }
+}
+
+figure {
+    margin: 0 !important;
 }

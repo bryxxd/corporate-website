@@ -1,6 +1,6 @@
 // Font
-$font-default : 'Poppins',
-sans-serif;
+$font-default : "Inter", sans-serif;
+$font-poppins : "Poppins", sans-serif;
 
 // Text Color
 $color-text : #333;
@@ -10,9 +10,22 @@ $primary-btn : #0d6efd;
 $secondary-btn : #6c757d;
 
 // For pc
-$pc-width : 1100;
-$pc-gap : 4rem;
+$pc-layout-width: 1100;
+$pc-window-gap: 4rem;
+$pc-min-width: calc(#{$pc-layout-width}px + #{$pc-window-gap * 2});
 
 //For sp
-$sp-width: 750;
-$sp-gap : 1rem;
+$sp-width: 375;
+$sp-width-breakpoint: $sp-width * 2;
+$sp-window-gap: 1.5rem;
+
+//Colors 
+$background-color1: #fff;
+$background-color2: #F2F1EF;
+$text-color1:#222222;
+$text-color1-20-opacity: #22222233;
+$text-color1-40-opacity: #22222266;
+$text-color2 : #222222;
+$text-color2-20-opacity: #22222233;
+$text-color2-40-opacity:  #22222266;
+$background-color:#D8D6D2;

@@ -1,0 +1,47 @@
+.c-button {
+    text-decoration: none;
+    background-color: $background-color1;
+    color: $text-color2;
+    padding: 10px 50px;
+    font-size: 20px;
+    border-radius: 100px;
+    font-family: $font-poppins;
+    position: relative;
+    border: 1px solid #000;
+    cursor: pointer;
+
+    @include mq_sp {
+        padding: 1rem 5rem;
+        font-size: 1.6rem;
+    }
+    
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: $text-color2;
+        border-radius: 100px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        transition-duration: 0.2s;
+    }
+
+    &.is-big {
+        padding: 15px 60px;
+        font-size: 30px;
+
+        @include mq_sp {
+            font-size: 1.6rem;
+        }
+    }
+
+    @include mq_pc {
+        &:hover {
+            &::after {
+                transform: translateY(5px) translateX(5px);
+            }
+        }
+    }
+}

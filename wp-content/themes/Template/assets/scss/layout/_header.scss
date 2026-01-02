@@ -2,22 +2,53 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 6rem;
-    background: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    top: 0;
+    z-index: 9999;
+    color: $background-color1;
 
+    &.is-sub {
+       color: $text-color1;
+       background-color: $background-color1
+    }
+    
     @include mq_sp {
-        padding: 0.5rem 1rem;
+        padding: 1rem 1.5rem;
         position: fixed;
         top: 0;
         right: 0;
         left: 0;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
         z-index: 9999;
     }
 
     &__info {
         &__title {
             font-size: 40px;
+         
+            @include mq_sp {
+                font-size: 2.2rem;
+                position: relative;
+                z-index: 999;
+            }
+            
+            a  {
+                text-decoration: none;
+                color: inherit;
+            }
         }
+
+        .is-view & {
+            &__title {
+                color: #000;
+            }
+        }
+    }
+
+    &.is-scrolled {
+        background: $background-color1;
+        color: $text-color1;
     }
 }
