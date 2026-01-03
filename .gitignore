@@ -4,3 +4,4 @@ node_modules/
 
 # ignore files
 wp-config.php
+wp-content/uploads/

@@ -20,7 +20,7 @@
         justify-content: space-between;
         width: 700px;
         margin: 100px auto;
-        
+
 
         .is-confirm & {
             margin-bottom: 0;
@@ -124,6 +124,10 @@
                         border-radius: 5px;
                         vertical-align: middle;
                         margin-left: 10px;
+
+                        .is-confirm & {
+                            display: none;
+                        }
                     }
 
                     @include mq_sp {
@@ -134,6 +138,12 @@
                 &__td {
                     display: block;
                     padding-top: 6px;
+
+                    .is-confirm & {
+                        @include mq_sp {
+                            font-size: 1.4rem;
+                        }
+                    }
 
                     &__input {
                         width: 100%;
@@ -195,6 +205,12 @@
                         }
                     }
                 }
+
+                &.is-privacy {
+                    .is-confirm & {
+                        display: none;
+                    }
+                }
             }
         }
     }
@@ -242,10 +258,16 @@
             margin-top: 4rem;
         }
 
-        &.is-confirm {
+        .is-confirm & {
             display: flex;
             justify-content: center;
             gap: 10px;
+
+            @include mq_sp {
+                flex-direction: column;
+                gap: 0;
+                margin-top: 0;
+            }
         }
     }
 
