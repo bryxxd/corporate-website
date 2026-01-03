@@ -202,7 +202,7 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
                                 <li class="splide__slide p-index__blog__post__li">
                                     <a href="<?php the_permalink(); ?>" class="p-index__blog__post__anchor">
                                         <?php if (has_post_thumbnail()):
-                                            the_post_thumbnail('post-thumbnail', ['class' => 'p-index__blog__post__anchor__image',]);
+                                            the_post_thumbnail('', ['class' => 'p-index__blog__post__anchor__image',]);
                                         else: ?>
                                             <img class="p-index__blog__post__anchor__image"
                                                 src="<?php echo get_template_directory_uri(); ?>/assets/img/common/post-placeholder.jpg"
