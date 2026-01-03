@@ -27,13 +27,14 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
         <div class="container">
             <?php
             $works_gallery = SCF::get('works_gallery');
+            $works_gallery = array_filter($works_gallery);
             ?>
             <?php
             if (have_posts()):
                 while (have_posts()):
                     the_post();
                     ?>
-                    <?php if ($works_gallery): ?>
+                        <?php if ($works_gallery): ?>
                         <div class="splide p-works-detail__gallery" role="group" aria-label="Splide Basic HTML Example">
                             <div class="splide__track">
                                 <ul class="splide__list p-works-detail__gallery__list">
