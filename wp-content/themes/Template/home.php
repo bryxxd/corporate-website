@@ -48,12 +48,14 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
                             src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-service-figure1.jpg"
                             alt="About Figure">
                     </figure>
-                    <figure class="p-index__service__inner__photos__figure p-index__service__inner__photos__figure__target">
+                    <figure
+                        class="p-index__service__inner__photos__figure p-index__service__inner__photos__figure__target">
                         <img class="p-index__service__inner__photos__figure__img"
                             src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-service-figure2.jpg"
                             alt="About Figure">
                     </figure>
-                    <figure class="p-index__service__inner__photos__figure p-index__service__inner__photos__figure__target">
+                    <figure
+                        class="p-index__service__inner__photos__figure p-index__service__inner__photos__figure__target">
                         <img class="p-index__service__inner__photos__figure__img"
                             src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-service-figure3.jpg"
                             alt="About Figure">
@@ -187,10 +189,15 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
                 <div class="splide__track">
                     <ul class="splide__list">
                         <?php
-                        if (have_posts()):
-                            while (have_posts()):
-                                the_post();
-                                $categories = get_the_category() ?? [];
+                        $wpQuery = new WP_Query([
+                            'posts_per_page' => 6,
+                            'post_type' => 'post',
+                            'post_status' => 'publish',
+                        ]);
+                        if ($wpQuery->have_posts()):
+                            while ($wpQuery->have_posts()):
+                                $wpQuery->the_post();
+                                $categories = get_the_category();
                                 ?>
                                 <li class="splide__slide p-index__blog__post__li">
                                     <a href="<?php the_permalink(); ?>" class="p-index__blog__post__anchor">
@@ -198,7 +205,7 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
                                             the_post_thumbnail('post-thumbnail', ['class' => 'p-index__blog__post__anchor__image',]);
                                         else: ?>
                                             <img class="p-index__blog__post__anchor__image"
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-gallery-img8.jpg"
+                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/common/post-placeholder.jpg"
                                                 alt="Thumbnail Placeholder">
                                         <?php endif; ?>
                                         <ul class="p-index__blog__post__anchor__category">
@@ -214,7 +221,8 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
 
                                     </a>
                                 </li>
-                            <?php endwhile; endif; ?>
+                            <?php endwhile;
+                        endif; ?>
                     </ul>
                 </div>
                 <div class="p-index__blog__post__progress">
@@ -248,7 +256,7 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
             </div>
         </section>
     </div>
-    
+
     <?php get_template_part('./template/contact-banner') ?>
 
 </main>
