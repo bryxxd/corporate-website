@@ -17,6 +17,7 @@ https://snow-shrew-794347.hostingersite.com/
 - Custom post types and taxonomies
 - Category filtering functionality
 - Gulp for SASS compilation
+- Contact form using MW WP Form
 
 ## Installation
 
