@@ -16,23 +16,14 @@ https://snow-shrew-794347.hostingersite.com/
 - Custom WordPress theme development
 - Custom post types and taxonomies
 - Category filtering functionality
-- Gulp for SASS compilation
+-  [FLOCSS](https://github.com/hiloki/flocss/blob/master/README_eng.md) - CSS architecture methodology
+
 
 ## Installation
 
 ### Install Package
 ```bash
 npm install
-```
-
-### Install Gulp as dependency
-```bash
-npm install --save-dev gulp
-```
-
-### Install the required gulp plugins
-```bash
-npm install --save-dev gulp-sass gulp-clean-css
 ```
 
 ### Build SCSS file 
