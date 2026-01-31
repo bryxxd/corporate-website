@@ -12,41 +12,41 @@
     <?php wp_head() ?>
 </head>
 
-<header class="header <?php if (!is_front_page()): ?>is-sub<?php endif ?>">
-    <div class="header__info">
+<header class="l-header <?php if (!is_front_page()): ?>is-sub<?php endif ?>">
+    <div class="l-header__info">
         <?php if (is_front_page()): ?>
-            <h1 class="header__info__title">
+            <h1 class="l-header__info__title">
                 <a href="<?php echo home_url('/') ?>">Logo</a>
             </h1>
         <?php else: ?>
-            <p class="header__info__title">
+            <p class="l-header__info__title">
                 <a href="<?php echo home_url('/') ?>">Logo</a>
             </p>
         <?php endif ?>
     </div>
-    <nav class="nav">
-        <p class="nav__menu d-sp-only">
-            <button class="nav__menu__button <?php if (!is_front_page()): ?>is-scrolled<?php endif ?>">
-                <span class="nav__menu__button__line"></span>
-                <span class="nav__menu__button__line"></span>
-                <span class="nav__menu__button__line"></span>
+    <nav class="l-nav">
+        <p class="l-nav__menu u-display-sp-only">
+            <button class="l-nav__menu__button <?php if (!is_front_page()): ?>is-scrolled<?php endif ?>">
+                <span class="l-nav__menu__button__line"></span>
+                <span class="l-nav__menu__button__line"></span>
+                <span class="l-nav__menu__button__line"></span>
             </button>
         </p>
-        <ul class="nav__ul">
-            <li class="nav__ul__li">
-                <a href="<?php echo home_url('') ?>" class="nav__ul__li__a">Home</a>
+        <ul class="l-nav__ul">
+            <li class="l-nav__ul__li">
+                <a href="<?php echo home_url('') ?>" class="l-nav__ul__li__a">Home</a>
             </li>
-            <li class="nav__ul__li">
-                <a href="<?php echo home_url('/blog/') ?>" class="nav__ul__li__a">Blog</a>
+            <li class="l-nav__ul__li">
+                <a href="<?php echo home_url('/blog/') ?>" class="l-nav__ul__li__a">Blog</a>
             </li>
-            <li class="nav__ul__li">
-                <a href="<?php echo home_url('/service/') ?>" class="nav__ul__li__a">Service</a>
+            <li class="l-nav__ul__li">
+                <a href="<?php echo home_url('/service/') ?>" class="l-nav__ul__li__a">Service</a>
             </li>
-            <li class="nav__ul__li">
-                <a href="<?php echo home_url('/works/') ?>" class="nav__ul__li__a">Works</a>
+            <li class="l-nav__ul__li">
+                <a href="<?php echo home_url('/works/') ?>" class="l-nav__ul__li__a">Works</a>
             </li>
-            <li class="nav__ul__li">
-                <a href="<?php echo home_url('/contact/') ?>" class="nav__ul__li__a <?php if (is_front_page()): ?>is-contact<?php else : ?>is-contact is-scrolled<?php endif ?>">Contact</a>
+            <li class="l-nav__ul__li">
+                <a href="<?php echo home_url('/contact/') ?>" class="l-nav__ul__li__a <?php if (is_front_page()): ?>is-contact<?php else : ?>is-contact is-scrolled<?php endif ?>">Contact</a>
             </li>
         </ul>
     </nav>

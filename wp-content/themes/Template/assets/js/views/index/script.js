@@ -4,13 +4,13 @@
     $(window).scroll(function () {
       var scroll = $(window).scrollTop();
       if (scroll >= 600) {
-        $(".header").addClass("is-scrolled");
+        $(".l-header").addClass("is-scrolled");
         $(".is-contact").addClass("is-scrolled");
-        $(".nav__menu__button__line").addClass("is-scrolled");
+        $(".l-nav__menu__button__line").addClass("is-scrolled");
       } else {
-        $(".header").removeClass("is-scrolled");
+        $(".l-header").removeClass("is-scrolled");
         $(".is-contact").removeClass("is-scrolled");
-        $(".nav__menu__button__line").addClass("is-scrolled");
+        $(".l-nav__menu__button__line").removeClass("is-scrolled");
       }
     });
   });

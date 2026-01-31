@@ -1,13 +1,12 @@
 <?php
 get_header();
-
 wp_enqueue_script('home', get_template_directory_uri() . '/assets/js/views/index/script.js', array('jquery'), 1.1, true);
 wp_enqueue_script('splide', get_template_directory_uri() . '/assets/js/splide/splide.min.js', array('jquery'), 1.1, true);
 wp_enqueue_script('splide-extension', get_template_directory_uri() . '/assets/js/splide/splide-extension-auto-scroll.min.js', array('jquery'), 1.1, true);
 wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/splide/splide.min.css', false, '1.1', 'all');
 ?>
 
-<main class="main">
+<main class="l-main">
     <div class="p-index">
         <section class="p-index__mv">
             <div class="splide p-index__mv__slide" role="group" aria-label="Splide">
@@ -37,7 +36,7 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
             </div>
         </section>
 
-        <section class="p-index__service container-sp-only">
+        <section class="p-index__service c-container-sp-only">
             <div class="c-heading">
                 <h2 class="c-heading__h2">Service</h2>
             </div>
@@ -251,7 +250,7 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
                     </div>
                 </div>
             </div>
-            <div class="container p-index__blog__post__more">
+            <div class="u-container p-index__blog__post__more">
                 <a class="c-button" href="<?php echo home_url('/blog/') ?>">See more</a>
             </div>
         </section>

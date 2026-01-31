@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="container">
+<div class="c-container">
     <div class="c-hero">
         <h1 class="c-hero__heading">Works</h1>
         <ul class="c-hero__topic-path">
@@ -14,7 +14,7 @@
 </div>
 <main>
     <div class="p-works">
-        <div class="container">
+        <div class="c-container">
             <div class="c-category-checkbox">
                 <details class="c-category-checkbox__details">
                     <summary class="c-category-checkbox__details__summary">Filter by Category</summary>

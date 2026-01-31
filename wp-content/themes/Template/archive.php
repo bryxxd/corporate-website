@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="container">
+<div class="c-container">
     <div class="c-hero">
         <h1 class="c-hero__heading">Blog</h1>
         <ul class="c-hero__topic-path">
@@ -13,7 +13,7 @@
     </div>
 </div>
 <main>
-    <div class="container">
+    <div class="c-container">
         <ul class="c-post-category">
             <li class="c-post-category__li">
                 <a href="<?php echo home_url('/blog/') ?>"
