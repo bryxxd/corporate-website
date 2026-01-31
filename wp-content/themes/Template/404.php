@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="c-container">
+<div class="u-container">
     <div class="c-hero">
         <h1 class="c-hero__heading">Page Not Found</h1>
         <ul class="c-hero__topic-path">
@@ -14,7 +14,7 @@
 </div>
 <main>
     <section class="p-not-found ">
-        <div class="c-container">
+        <div class="u-container">
             <div class="p-not-found__inner">
                 <p class="p-not-found__description">The page you are looking for could not be found.</p>
                 <a href="<?php echo home_url('/') ?>" class="c-button">Back to Home</a>

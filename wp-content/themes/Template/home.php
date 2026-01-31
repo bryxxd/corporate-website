@@ -36,72 +36,91 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
             </div>
         </section>
 
-        <section class="p-index__service c-container-sp-only">
-            <div class="c-heading">
-                <h2 class="c-heading__h2">Service</h2>
-            </div>
-            <div class="p-index__service__inner">
-                <div class="p-index__service__inner__photos u-display-pc-only" id="photos">
-                    <figure class="p-index__service__inner__photos__figure ">
-                        <img class="p-index__service__inner__photos__figure__img"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-service-figure1.jpg"
-                            alt="About Figure">
-                    </figure>
-                    <figure
-                        class="p-index__service__inner__photos__figure p-index__service__inner__photos__figure__target">
-                        <img class="p-index__service__inner__photos__figure__img"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-service-figure2.jpg"
-                            alt="About Figure">
-                    </figure>
-                    <figure
-                        class="p-index__service__inner__photos__figure p-index__service__inner__photos__figure__target">
-                        <img class="p-index__service__inner__photos__figure__img"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-service-figure3.jpg"
-                            alt="About Figure">
-                    </figure>
+        <section class="p-index__service">
+            <div class="u-container-below-pc-only">
+                <div class="c-heading">
+                    <h2 class="c-heading__h2">Service</h2>
                 </div>
-                <div class="p-index__service__inner__details">
-                    <div class="p-index__service__inner__details__item">
-                        <h3 class="p-index__service__inner__details__item__title">Lorem ipsum</h3>
-                        <p class="p-index__service__inner__details__item__p">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi, distinctio aperiam
-                            inventore quibusdam reiciendis illo optio quia laboriosam aut deleniti vero, quaerat
-                            architecto dolor magni possimus? Minima, optio repudiandae.
-                            <br>
-                            <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi, distinctio aperiam
-                            inventore quibusdam reiciendis illo optio quia laboriosam aut deleniti vero, quaerat
-                            architecto dolor magni possimus? Minima, optio repudiandae.
-                        </p>
-                        <a class="c-button" href="<?php echo home_url('/service/service1') ?>">See more</a>
+                <div class="p-index__service__inner">
+                    <div class="p-index__service__inner__photos u-display-pc-only" id="photos">
+                        <figure class="p-index__service__inner__photos__figure ">
+                            <img class="p-index__service__inner__photos__figure__img"
+                                src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-service-figure1.jpg"
+                                alt="About Figure">
+                        </figure>
+                        <figure
+                            class="p-index__service__inner__photos__figure p-index__service__inner__photos__figure__target">
+                            <img class="p-index__service__inner__photos__figure__img"
+                                src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-service-figure2.jpg"
+                                alt="About Figure">
+                        </figure>
+                        <figure
+                            class="p-index__service__inner__photos__figure p-index__service__inner__photos__figure__target">
+                            <img class="p-index__service__inner__photos__figure__img"
+                                src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-service-figure3.jpg"
+                                alt="About Figure">
+                        </figure>
                     </div>
-                    <div class="p-index__service__inner__details__item  p-index__service__inner__details__item__target">
-                        <h3 class="p-index__service__inner__details__item__title">Lorem ipsum</h3>
-                        <p class="p-index__service__inner__details__item__p">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi, distinctio aperiam
-                            inventore quibusdam reiciendis illo optio quia laboriosam aut deleniti vero, quaerat
-                            architecto dolor magni possimus? Minima, optio repudiandae.
-                            <br>
-                            <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi, distinctio aperiam
-                            inventore quibusdam reiciendis illo optio quia laboriosam aut deleniti vero, quaerat
-                            architecto dolor magni possimus? Minima, optio repudiandae.
-                        </p>
-                        <a class="c-button" href="<?php echo home_url('/service/service2') ?>">See more</a>
-                    </div>
-                    <div class="p-index__service__inner__details__item  p-index__service__inner__details__item__target">
-                        <h3 class="p-index__service__inner__details__item__title">Lorem ipsum</h3>
-                        <p class="p-index__service__inner__details__item__p">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi, distinctio aperiam
-                            inventore quibusdam reiciendis illo optio quia laboriosam aut deleniti vero, quaerat
-                            architecto dolor magni possimus? Minima, optio repudiandae.
-                            <br>
-                            <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi, distinctio aperiam
-                            inventore quibusdam reiciendis illo optio quia laboriosam aut deleniti vero, quaerat
-                            architecto dolor magni possimus? Minima, optio repudiandae.
-                        </p>
-                        <a class="c-button" href="<?php echo home_url('/service/service3') ?>">See more</a>
+                    <div class="p-index__service__inner__details">
+                        <div class="p-index__service__inner__details__item">
+                            <img class="p-index__service__inner__photos__figure__img u-display-below-pc-only"
+                                src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-service-figure1.jpg"
+                                alt="About Figure">
+                            <h3 class="p-index__service__inner__details__item__title">Lorem ipsum</h3>
+                            <p class="p-index__service__inner__details__item__p">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi, distinctio
+                                aperiam
+                                inventore quibusdam reiciendis illo optio quia laboriosam aut deleniti vero, quaerat
+                                architecto dolor magni possimus? Minima, optio repudiandae.
+                                <br>
+                                <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi, distinctio
+                                aperiam
+                                inventore quibusdam reiciendis illo optio quia laboriosam aut deleniti vero, quaerat
+                                architecto dolor magni possimus? Minima, optio repudiandae.
+                            </p>
+                            <a class="c-button" href="<?php echo home_url('/service/service1') ?>">See more</a>
+                        </div>
+                        <div
+                            class="p-index__service__inner__details__item  p-index__service__inner__details__item__target">
+                             <img class="p-index__service__inner__photos__figure__img u-display-below-pc-only"
+                                src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-service-figure2.jpg"
+                                alt="About Figure">
+                            <h3 class="p-index__service__inner__details__item__title">Lorem ipsum</h3>
+                            <p class="p-index__service__inner__details__item__p">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi, distinctio
+                                aperiam
+                                inventore quibusdam reiciendis illo optio quia laboriosam aut deleniti vero, quaerat
+                                architecto dolor magni possimus? Minima, optio repudiandae.
+                                <br>
+                                <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi, distinctio
+                                aperiam
+                                inventore quibusdam reiciendis illo optio quia laboriosam aut deleniti vero, quaerat
+                                architecto dolor magni possimus? Minima, optio repudiandae.
+                            </p>
+                            <a class="c-button" href="<?php echo home_url('/service/service2') ?>">See more</a>
+                        </div>
+                        <div
+                            class="p-index__service__inner__details__item  p-index__service__inner__details__item__target">
+                             <img class="p-index__service__inner__photos__figure__img u-display-below-pc-only"
+                                src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-service-figure3.jpg"
+                                alt="About Figure">
+                            <h3 class="p-index__service__inner__details__item__title">Lorem ipsum</h3>
+                            <p class="p-index__service__inner__details__item__p">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi, distinctio
+                                aperiam
+                                inventore quibusdam reiciendis illo optio quia laboriosam aut deleniti vero, quaerat
+                                architecto dolor magni possimus? Minima, optio repudiandae.
+                                <br>
+                                <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi, distinctio
+                                aperiam
+                                inventore quibusdam reiciendis illo optio quia laboriosam aut deleniti vero, quaerat
+                                architecto dolor magni possimus? Minima, optio repudiandae.
+                            </p>
+                            <a class="c-button" href="<?php echo home_url('/service/service3') ?>">See more</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -197,7 +216,7 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
                             while ($wpQuery->have_posts()):
                                 $wpQuery->the_post();
                                 $categories = get_the_category();
-                                ?>
+                        ?>
                                 <li class="splide__slide p-index__blog__post__li">
                                     <a href="<?php the_permalink(); ?>" class="p-index__blog__post__anchor">
                                         <?php if (has_post_thumbnail()):
@@ -220,7 +239,7 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
 
                                     </a>
                                 </li>
-                            <?php endwhile;
+                        <?php endwhile;
                         endif; ?>
                     </ul>
                 </div>
