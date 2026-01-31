@@ -25,7 +25,7 @@
         <?php endif ?>
     </div>
     <nav class="l-nav">
-        <p class="l-nav__menu u-display-sp-only">
+        <p class="l-nav__menu u-display-below-pc-only">
             <button class="l-nav__menu__button <?php if (!is_front_page()): ?>is-scrolled<?php endif ?>">
                 <span class="l-nav__menu__button__line"></span>
                 <span class="l-nav__menu__button__line"></span>

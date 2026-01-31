@@ -2,7 +2,7 @@
     &__ul {
         display: inline-flex;
 
-        @include mq_sp {
+        @include mq_below_pc {
             position: fixed;
             margin: 0 auto;
             inset: 0;
@@ -29,13 +29,13 @@
             list-style-type: none;
 
             &__a {
-                font-size: 20px;
+                font-size: clamp(1.4rem, 1.8vw, 18px);
                 text-decoration: none;
                 font-weight: 500;
                 color: inherit;
                 transform: translateY(-50%);
 
-                @include mq_sp {
+                @include mq_below_pc {
                     color: #000;
                 }
 
@@ -65,7 +65,7 @@
     }
 
     &__menu {
-        @include mq_sp {
+        @include mq_below_pc {
             position: absolute;
             top: 2rem;
             right: 2rem;

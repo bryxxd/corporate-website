@@ -1,11 +1,17 @@
 .u-display {
     &-pc-only {
-        @include mq_sp {
+        @include mq_below_pc {
             display: none !important;
         }
     }
 
     &-sp-only {
+        @include mq_above_sp {
+            display: none !important;
+        }
+    }
+
+    &-below-pc-only {
         @include mq_pc {
             display: none !important;
         }

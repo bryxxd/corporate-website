@@ -22,7 +22,7 @@ wp_enqueue_script('service-script', get_template_directory_uri() . '/assets/js/v
             <img class="c-figure__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/service/pc/img-intro.jpg" alt="Service Figure"> 
         </figure>
         <div class="p-service__inner c-container-sp-only">
-            <div class="p-service__inner__photos d-pc-only" id="photos">
+            <div class="p-service__inner__photos u-display-pc-only" id="photos">
                 <figure class="p-service__inner__photos__figure ">
                     <img class="p-service__inner__photos__figure__img"
                         src="<?php echo get_template_directory_uri(); ?>/assets/img/views/service/pc/img-service-figure1.jpg"

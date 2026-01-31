@@ -41,7 +41,7 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
                 <h2 class="c-heading__h2">Service</h2>
             </div>
             <div class="p-index__service__inner">
-                <div class="p-index__service__inner__photos d-pc-only" id="photos">
+                <div class="p-index__service__inner__photos u-display-pc-only" id="photos">
                     <figure class="p-index__service__inner__photos__figure ">
                         <img class="p-index__service__inner__photos__figure__img"
                             src="<?php echo get_template_directory_uri(); ?>/assets/img/views/index/pc/img-service-figure1.jpg"
@@ -225,7 +225,7 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
                     </ul>
                 </div>
                 <div class="p-index__blog__post__progress">
-                    <div class="p-index__blog__post__progress__wrapper d-pc-only">
+                    <div class="p-index__blog__post__progress__wrapper">
                         <div class="p-index__blog__post__progress__wrapper__bar"></div>
                     </div>
                     <div class="splide__arrows p-index__blog__post__arrows">

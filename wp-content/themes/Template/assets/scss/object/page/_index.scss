@@ -9,7 +9,7 @@
                 content: "";
                 position: absolute;
                 width: 100%;
-                background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(255, 255, 255, .1));
+                background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.1));
                 inset: 0;
             }
 
@@ -23,34 +23,28 @@
         &__info {
             position: absolute;
             top: 50%;
-            left: 100px;
+            left: 0;
             transform: translateY(-50%);
             color: $background-color1;
+            padding: 50px;
+            width: 100%;
 
             @include mq_sp {
                 position: absolute;
                 top: 50%;
-                left: 3rem;
+                padding: 30px;
             }
 
             &__h2 {
-                font-size: 85px;
+                font-size: clamp(3rem, 8vw, 85px);
                 line-height: 1.2;
                 text-transform: capitalize;
-
-                @include mq_sp {
-                    font-size: 4rem;
-                }
             }
 
             &__p {
                 max-width: 1000px;
-                font-size: 30px;
+                font-size: clamp(1.4rem, 3vw, 30px);
                 margin-top: 30px;
-
-                @include mq_sp {
-                    font-size: 1.6rem;
-                }
             }
         }
     }
@@ -74,7 +68,7 @@
             }
 
             &__photos {
-                width: 45%;
+                width: 50%;
                 position: sticky;
                 top: 20px;
                 left: 0;
@@ -89,7 +83,9 @@
                     &__target {
                         opacity: 0;
                         transform: translateY(50px);
-                        transition: opacity 1s, transform 1s;
+                        transition:
+                            opacity 1s,
+                            transform 1s;
                         will-change: opacity, transform;
 
                         &.visible-item {
@@ -108,8 +104,12 @@
 
             &__details {
                 &__item {
-                    padding: 18rem 8rem 35rem 0;
+                    padding: 18rem 5rem 35rem 0;
                     margin-top: 25rem;
+
+                    @include mq_between {
+                        padding-right: 2.5rem;
+                    }
 
                     @include mq_sp {
                         padding: 0 0 5rem;
@@ -157,7 +157,7 @@
             }
 
             &--right {
-                margin-top: 6rem;
+                margin-top: 60px;
 
                 @include mq_sp {
                     margin-top: 3rem;
@@ -205,7 +205,7 @@
                     width: 100%;
                     height: 250px;
                     object-fit: contain;
-                    
+
                     @include mq_sp {
                         height: 22rem;
                     }
@@ -241,8 +241,8 @@
 
             &__arrows {
                 display: flex;
-                justify-content: space-between;
                 width: 250px;
+                gap: 25px;
 
                 @include mq_sp {
                     display: flex;
@@ -256,8 +256,8 @@
 
                 &__btn {
                     background-color: $text-color1 !important;
-                    width: 100px !important;
-                    height: 100px !important;
+                    width: 80px !important;
+                    height: 80px !important;
                     border-radius: 50%;
                     appearance: none;
                     border: none;
@@ -267,8 +267,8 @@
                     cursor: pointer;
 
                     @include mq_sp {
-                        width: 5rem !important;
-                        height: 5rem !important;
+                        width: 3rem !important;
+                        height: 3rem !important;
                     }
 
                     &:disabled {
@@ -282,7 +282,7 @@
                         height: 30px;
 
                         @include mq_sp {
-                            width: 3rem;
+                            width: 1.5rem;
                             height: 1.5rem;
                         }
                     }
@@ -296,20 +296,31 @@
                 gap: 8rem;
                 align-items: center;
 
-                @include mq_sp {
-                    margin: 2rem 2rem 0 0;
-                    position: static;
+                @include mq_between {
+                    margin: 5rem;
                 }
 
+                @include mq_sp {
+                    margin: 2rem 0 0 0;
+                    position: static;
+                }
 
                 &__wrapper {
                     background-color: $background-color2;
                     height: 1rem;
                     width: 70%;
 
+                    @include mq_sp {
+                        width: 100%;
+                    }
+
                     &__bar {
                         background: rgb(242, 241, 239);
-                        background: linear-gradient(90deg, rgba(242, 241, 239, 1) 0%, rgba(34, 34, 34, 0.9501050420168067) 80%);
+                        background: linear-gradient(
+                            90deg,
+                            rgba(242, 241, 239, 1) 0%,
+                            rgba(34, 34, 34, 0.9501050420168067) 80%
+                        );
                         height: 100%;
                         transition: width 400ms ease;
                         width: 0;

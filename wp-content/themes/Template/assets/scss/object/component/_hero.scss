@@ -6,11 +6,7 @@
     }
 
     &__heading {
-        font-size: 80px;
-
-        @include mq_sp {
-            font-size: 4rem;
-        }
+        font-size: clamp(4rem, 8vw, 80px);
     }
 
     &__topic-path {
@@ -29,22 +25,17 @@
         &__li {
             display: inline-block;
             position: relative;
-            font-size: 18px;
+            font-size: clamp(1.6rem, 4vw, 18px);
 
             @include mq_sp {
-                font-size: 1.6rem;
                 margin-right: 0.5rem;
             }
 
             &::after {
                 content: ">";
-                font-size: 20px;
                 position: absolute;
                 margin: auto 1rem;
-
-                @include mq_sp {
-                    font-size: 1.6rem;
-                }
+                font-size: clamp(1.6rem, 4vw, 20px);
             }
 
             &:last-child::after {
@@ -67,9 +58,5 @@
                 display: inline-block;
             }
         }
-    }
-
-    &__post-date {
-        font-size: 20px;
     }
 }

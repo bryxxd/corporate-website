@@ -46,37 +46,42 @@
 
             <ul class="c-post-list p-works__post-list">
                 <?php
-                while (have_posts()):
-                    the_post();
-                    $categories = get_the_terms(get_the_ID(), 'work_category') ?? [];
+                if (have_posts()):
+                    while (have_posts()):
+                        the_post();
+                        $categories = get_the_terms(get_the_ID(), 'work_category') ?? [];
                 ?>
-                    <li class="c-post-list__li p-works__post-list__li">
-                        <a href="<?php the_permalink(); ?>" class="c-post-list__item">
-                            <div class="c-post-list__thumb">
-                                <?php if (has_post_thumbnail()):
-                                    the_post_thumbnail('post-thumbnail', ['class' => 'c-post-list__thumb__image',]);
-                                else: ?>
-                                    <img class="c-post-list__thumb__image"
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/img/common/post-placeholder.jpg"
-                                        alt="Image Placeholder">
+                        <li class="c-post-list__li p-works__post-list__li">
+                            <a href="<?php the_permalink(); ?>" class="c-post-list__item">
+                                <div class="c-post-list__thumb">
+                                    <?php if (has_post_thumbnail()):
+                                        the_post_thumbnail('post-thumbnail', ['class' => 'c-post-list__thumb__image',]);
+                                    else: ?>
+                                        <img class="c-post-list__thumb__image"
+                                            src="<?php echo get_template_directory_uri(); ?>/assets/img/common/post-placeholder.jpg"
+                                            alt="Image Placeholder">
+                                    <?php endif; ?>
+                                </div>
+                                <?php if ($categories): ?>
+                                    <div class="p-works__post-list__category">
+                                        <?php foreach ($categories as $category): ?>
+                                            <span
+                                                class="p-works__post-list__category__item"><?php echo esc_html($category->name); ?></span>
+                                        <?php endforeach; ?>
+                                    </div>
                                 <?php endif; ?>
-                            </div>
-                            <?php if ($categories): ?>
-                            <div class="p-works__post-list__category">
-                                <?php foreach ($categories as $category): ?>
-                                    <span
-                                        class="p-works__post-list__category__item"><?php echo esc_html($category->name); ?></span>
-                                <?php endforeach; ?>
-                            </div>
-                            <?php endif; ?>
-                            <div class="c-post-list__text__title"><?php the_title(); ?></div>
+                                <div class="c-post-list__text__title"><?php the_title(); ?></div>
 
-                        </a>
-                    </li>
-                <?php endwhile; ?>
+                            </a>
+                        </li>
+                    <?php endwhile;
+                else: ?>
+                    <p class="p-works__no-posts">No works found.</p>
+                <?php endif; ?>
             </ul>
             <div class="c-pagination">
-                <?php if (function_exists('wp_pagenavi')) wp_pagenavi(); ?>
+                <?php if (function_exists('wp_pagenavi'))
+                    wp_pagenavi(); ?>
             </div>
         </div>
     </div>

@@ -8,7 +8,7 @@ gulp.task('build:scss', function () {
   return gulp
     .src('wp-content/themes/Template/assets/scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(concat('style.css'))
+    .pipe(concat('styles.css'))
     .pipe(cleanCSS())
     .pipe(gulp.dest('wp-content/themes/Template/assets/css/'));
 });
