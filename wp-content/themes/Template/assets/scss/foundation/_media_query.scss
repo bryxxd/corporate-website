@@ -1,11 +1,36 @@
+// Media Query Mixins
+
+// For PC layout
 @mixin mq_pc {
-    @media screen and (min-width: ($sp-width-breakpoint + 1) + px) {
+    @media screen and (min-width: ($pc-layout-width + 1) + px) {
         @content;
     }
 }
 
+// For SP layout
 @mixin mq_sp {
-    @media screen and (max-width: ($sp-width-breakpoint + 1) + px) {
-        @content
-     }
+    @media screen and (max-width: $sp-width-breakpoint + px) {
+        @content;
+    }
+}
+
+// Between SP and PC
+@mixin mq_between($sp: $sp-width-breakpoint, $pc: $pc-layout-width) {
+    @media screen and (min-width: ($sp + 1) + px) and (max-width: $pc + px) {
+        @content;
+    }
+}
+
+// Below PC layout
+@mixin mq_below_pc {
+    @media screen and (max-width: $pc-layout-width + px) {
+        @content;
+    }
+}
+
+// Above SP layout
+@mixin mq_above_sp {
+    @media screen and (min-width: ($sp-width-breakpoint + 1) + px) {
+        @content;
+    }
 }

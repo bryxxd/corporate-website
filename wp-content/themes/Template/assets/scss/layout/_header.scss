@@ -1,4 +1,4 @@
-.header {
+.l-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,9 +15,8 @@
        background-color: $background-color1
     }
     
-    @include mq_sp {
+    @include mq_below_pc {
         padding: 1rem 1.5rem;
-        position: fixed;
         top: 0;
         right: 0;
         left: 0;
@@ -26,10 +25,9 @@
 
     &__info {
         &__title {
-            font-size: 40px;
+            font-size: clamp(2.5rem, 5vw, 40px);
          
-            @include mq_sp {
-                font-size: 2.2rem;
+            @include mq_below_pc {
                 position: relative;
                 z-index: 999;
             }

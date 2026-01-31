@@ -12,6 +12,10 @@
         gap: 30px 20px;
         margin-top: 50px;
 
+        @include mq_between {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
         @include mq_sp {
             grid-template-columns: 1fr;
             margin-top: 0;
@@ -35,5 +39,11 @@
                 display: inline-block;
             }
         }
+    }
+
+    &__no-posts {
+        font-size: clamp(1.4rem, 2vw, 20px);
+        color: $color-text;
+        margin-top: 50px;
     }
 }

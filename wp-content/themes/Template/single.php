@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="container">
+<div class="u-container">
     <div class="c-hero">
         <h1 class="c-hero__heading"><?php the_title() ?></h1>
         <ul class="c-hero__topic-path">
@@ -18,13 +18,13 @@
 
 <main>
     <div class="p-blog-detail">
-        <div class="container">
+        <div class="u-container">
             <?php
             if (have_posts()):
                 while (have_posts()):
                     the_post();
                     ?>
-                    <div class="post-list__thumb">
+                    <div class="c-post-list__thumb">
                         <?php if (has_post_thumbnail()):
                             the_post_thumbnail('detail-thumbnail', ['class' => 'p-blog-detail__thumb__image',]);
                         else: ?>

@@ -1,10 +1,6 @@
 .p-blog-detail {
     &__title {
-        font-size: 40px;
-
-        @include mq_sp {
-            font-size: 2rem;
-        }
+        font-size: clamp(2rem, 5vw, 40px);
     }
 
     &__thumb {

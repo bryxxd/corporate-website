@@ -7,7 +7,7 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
 ?>
 <div class="p-works-detail">
 
-    <div class="container">
+    <div class="u-container">
         <div class="c-hero">
             <h1 class="c-hero__heading"><?php the_title() ?></h1>
             <?php
@@ -24,7 +24,7 @@ wp_enqueue_style('splide-style', get_template_directory_uri() . '/assets/js/spli
     </div>
 
     <main>
-        <div class="container">
+        <div class="u-container">
             <?php
             $works_gallery = SCF::get('works_gallery');
             $works_gallery = array_filter($works_gallery);

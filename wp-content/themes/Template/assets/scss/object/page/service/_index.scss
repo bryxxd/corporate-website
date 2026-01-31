@@ -5,13 +5,17 @@
         gap: 55px;
         margin-top: 15rem;
 
+        @include mq_between {
+            margin-top: 10rem;
+        }
+
         @include mq_sp {
             display: block;
             margin-top: 10rem;
         }
 
         &__photos {
-            width: 45%;
+            width: 50%;
             position: sticky;
             top: 20px;
             left: 0;
@@ -26,7 +30,9 @@
                 &__target {
                     opacity: 0;
                     transform: translateY(50px);
-                    transition: opacity 1s, transform 1s;
+                    transition:
+                        opacity 1s,
+                        transform 1s;
                     will-change: opacity, transform;
 
                     &.visible-item {
@@ -39,6 +45,15 @@
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+
+                    @include mq_below_pc {
+                        height: 30rem;
+                        margin-bottom: 2rem;
+                    }
+
+                    @include mq_sp {
+                        height: 22rem;
+                    }
                 }
             }
         }
@@ -48,7 +63,7 @@
                 padding: 18rem 8rem 35rem 0;
                 margin-top: 25rem;
 
-                @include mq_sp {
+                @include mq_below_pc {
                     padding: 0 0 5rem;
                     margin-top: 6rem;
                     text-align: center;
@@ -57,7 +72,7 @@
                 &__title {
                     font-size: 50px;
 
-                    @include mq_sp {
+                    @include mq_below_pc {
                         font-size: 2.5rem;
                         text-align: left;
                     }
@@ -68,7 +83,7 @@
                     padding: 2rem 0 4rem;
                     text-align: justify;
 
-                    @include mq_sp {
+                    @include mq_below_pc {
                         text-align: left;
                         padding: 2rem 0 5rem;
                         font-size: 1.6rem;
@@ -82,20 +97,12 @@
         margin: 10rem 0;
 
         &__heading {
-            font-size: 50px;
+            font-size: clamp(3rem, 6vw, 50px);
             margin-bottom: 3rem;
-
-            @include mq_sp {
-                font-size: 3rem;
-            }
         }
 
         &__context {
-            font-size: 20px;
-
-            @include mq_sp {
-                font-size: 1.6rem;
-            }
+            font-size: clamp(1.6rem, 4vw, 20px);
 
             &__img {
                 float: right;

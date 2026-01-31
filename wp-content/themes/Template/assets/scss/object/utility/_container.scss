@@ -1,4 +1,4 @@
-.container {
+.u-container {
     margin: 0 auto;
     max-width: calc(#{$pc-layout-width}px + #{$pc-window-gap * 2});
     padding: 0 $pc-window-gap;
@@ -14,6 +14,14 @@
         padding: 0;
 
         @include mq_sp {
+            padding: 0 $sp-window-gap;
+        }
+    }
+
+    &-below-pc-only {
+        @include mq_below_pc {
+            margin: 0 auto;
+            max-width: auto;
             padding: 0 $sp-window-gap;
         }
     }

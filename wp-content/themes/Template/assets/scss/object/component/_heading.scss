@@ -1,11 +1,7 @@
 .c-heading {
-    font-size: 60px;
+    font-size: clamp(3rem, 5vw, 60px);
     font-family: $font-poppins;
     text-align: center;
-
-    @include mq_sp {
-        font-size: 3rem;
-    }
 
     @include mq_pc {
         position: relative;

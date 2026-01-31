@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-<div class="container">
+<div class="u-container">
     <div class="c-hero">
         <h1 class="c-hero__heading">Service 2</h1>
         <ul class="c-hero__topic-path">
@@ -23,7 +23,7 @@ get_header();
             <img class="c-figure__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/views/service/service2/img-service-figure1.jpg" width="100%" height="700px" alt="Service Figure">
         </figure>
 
-        <div class="container">
+        <div class="u-container">
             <div class="p-service__content">
                 <h2 class="p-service__content__heading">Lorem Ipsum</h2>
                 <div class="p-service__content__context">
